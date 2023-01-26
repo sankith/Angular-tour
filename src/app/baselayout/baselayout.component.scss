@@ -1,0 +1,29 @@
+.nav-link{
+    color: black;
+}
+img{
+    height: 500px;
+}
+
+.package .dropdown-menu{
+    display:none;
+}
+
+@media (min-width: 576px) { 
+    .package:hover .dropdown-menu{
+        display:block;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  }
+

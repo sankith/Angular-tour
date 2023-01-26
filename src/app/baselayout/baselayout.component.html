@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Sri LaxmiNarshima Tours</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+          </li>
+          <li class="nav-item dropdown package">
+            <a class="nav-link" routerLink="/packages" routerLinkActive="active" ariaCurrentWhenActive="page" role="button">
+              Packages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Kashi</a></li>
+              <li><a class="dropdown-item" href="#">Chardham</a></li>
+              <li><a class="dropdown-item" href="#">Gujarath</a></li>
+              <li><a class="dropdown-item" href="#">Nepal</a></li>
+              <li><a class="dropdown-item" href="#">Karnataka</a></li>
+              <li><a class="dropdown-item" href="#">Rameshwaram</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>

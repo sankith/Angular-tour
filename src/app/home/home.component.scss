@@ -1,0 +1,32 @@
+.carousel-img{
+    height: 250px;
+}
+
+.card-body{
+    height:150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-text{
+    overflow: hidden;
+}
+
+@media (min-width: 576px) { 
+    .carousel-img{
+        height: 400px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  }
+
