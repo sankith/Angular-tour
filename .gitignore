@@ -45,4 +45,4 @@ testem.log
 Thumbs.db
 
 #custom excluded
-/package-lock.json
+.package-lock.json
