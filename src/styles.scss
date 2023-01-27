@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~perfect-scrollbar/css/perfect-scrollbar";
+
+.ps-container > .ps-scrollbar-x-rail{
+    opacity: 0.6;
+}
+
+.ps-container > .ps-scrollbar-y-rail{
+    opacity: 0.6;
+}
+
+.ps__thumb-y {
+    background-color: gray !important;
+}
+
+.ps__thumb-x {
+    background-color: gray !important;
+}

@@ -2,15 +2,52 @@
     height: 250px;
 }
 
-.card-body{
-    height:150px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+.viewmore{
+    float: right;
 }
 
-.card-text{
-    overflow: hidden;
+::-webkit-scrollbar {
+    width: 1px;
+    height: 8px;
 }
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 6px rgba(106, 47, 155, 0.5); 
+}
+
+.row-card{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.viewmore{
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+.row-package{
+    height: auto;
+
+    .col{
+        height: 200px;
+    }
+}
+
+.package-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
 
 @media (min-width: 576px) { 
     .carousel-img{

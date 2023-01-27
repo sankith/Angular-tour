@@ -47,3 +47,4 @@ Thumbs.db
 #custom excluded
 .package-lock.json
 .dist
+package-lock.json
