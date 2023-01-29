@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -10,5 +12,6 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
   ]
 })
 export class AppComponent {
+  faWhatsapp = faWhatsapp;
   title = 'srilaxminarshima';
 }

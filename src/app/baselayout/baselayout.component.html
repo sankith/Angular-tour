@@ -1,3 +1,4 @@
+<section>
 <nav class="navbar navbar-expand-sm bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Sri LaxmiNarshima Tours</a>
@@ -29,5 +30,60 @@
       </div>
     </div>
   </nav>
-  
-  <router-outlet></router-outlet>
+
+  <div class="content-outlet mb-md-2">
+    <router-outlet></router-outlet>
+  </div>  
+<div class="row text-center my-2">
+  <div class="col d-md-none">
+    <h6 style="font-size: 20px; text-decoration: underline;">Follow us On</h6>
+    <a target="_blank" href="https://www.facebook.com/srilaxminarsimhatours">
+      <fa-icon class="social-media-icons" [icon]="faFacebookSquare"></fa-icon>
+    </a><a target="_blank" href="https://www.instagram.com/srilaxminarsimhatours">
+      <fa-icon class="social-media-icons" [icon]="faInstagram"></fa-icon>
+    </a><a target="_blank" href="https://api.whatsapp.com/send?phone=9294000040">
+      <fa-icon class="social-media-icons" [icon]="faWhatsapp"></fa-icon>
+    </a>
+  </div>
+</div>
+<div class="container-fluid footer ">
+  <div class="row p-2 p-sm-5 justify-content-center">
+    <div class="col-auto col-md">
+      <span>
+        <h5>Sri LaxmiNarshima Tours <small>Pvt.Ltd</small></h5>
+        <Address>
+        <fa-icon class="address-icons" [icon]="faLocationPin"></fa-icon>
+           Nyalkal,Nizamabad. Telangana - 503230.
+          <br>
+        
+        <div class="pt-2">
+        <fa-icon class="address-icons" [icon]="faContactCard"></fa-icon> Contact :
+          <ul>
+            <li class="pb-1">
+              <fa-icon class="address-icons" [icon]="faUser"></fa-icon>Kulakarni Prahallad Rao <span class="phone-number"> <fa-icon class="address-icons" [icon]="faPhone"></fa-icon>9294000040</span>
+            </li>
+            <li class="pb-1">
+              <fa-icon class="address-icons" [icon]="faUser"></fa-icon>Kulakarni Praveen Kumar <span class="phone-number"> <fa-icon class="address-icons" [icon]="faPhone"></fa-icon>9294000040</span>
+            </li>
+            <li class="pb-1">
+              <fa-icon class="address-icons" [icon]="faUser"></fa-icon>Kulakarni Prashanth <span class="phone-number"> <fa-icon class="address-icons" [icon]="faPhone"></fa-icon>9294000040</span>
+            </li>
+          </ul>
+        </div>
+        </Address>
+      </span>
+    </div>
+    <div class="col d-md-block d-none">
+      <h6>Follow us On</h6>
+      <a target="_blank" href="https://www.facebook.com/srilaxminarsimhatours">
+        <fa-icon class="social-media-icons" [icon]="faFacebookSquare"></fa-icon>
+      </a><a target="_blank" href="https://www.instagram.com/srilaxminarsimhatours">
+        <fa-icon class="social-media-icons" [icon]="faInstagram"></fa-icon>
+      </a><a target="_blank" href="https://api.whatsapp.com/send?phone=9294000040">
+        <fa-icon class="social-media-icons" [icon]="faWhatsapp"></fa-icon>
+      </a>
+    </div>
+  </div>
+</div>
+
+</section>

@@ -9,14 +9,51 @@ img{
     display:none;
 }
 
+section{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer{
+  background-color: black;
+  margin-top: auto !important;
+  color: white;    
+}
+
+.social-media-icons{
+    color: black;
+    font-size: 22px;
+    padding: 0px 5px;
+}
+
+.address-icons{
+    color: white;
+    font-size: 15px;
+    padding: 0px 5px;
+}
+
+.phone-number{
+    white-space: pre;
+}
+
 @media (min-width: 576px) { 
     .package:hover .dropdown-menu{
         display:block;
     }
+
+    
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+    .social-media-icons{
+        color: white;
+        font-size: 20px;
+        padding: 0px 5px;
+    }
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  }

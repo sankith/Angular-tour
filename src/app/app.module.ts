@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PackagesComponent } from './packages/packages.component';
 import { AboutComponent } from './about/about.component';
 import { BaselayoutComponent } from './baselayout/baselayout.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import { BaselayoutComponent } from './baselayout/baselayout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

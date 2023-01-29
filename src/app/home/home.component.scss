@@ -7,18 +7,21 @@
 }
 
 ::-webkit-scrollbar {
-    width: 1px;
+    width: 100px;
     height: 8px;
 }
 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 4px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
     -webkit-box-shadow: inset 0 0 6px rgba(106, 47, 155, 0.5); 
+    width: 10px;
+
 }
 
 .row-card{
@@ -43,15 +46,37 @@
 }
 
 .package-title{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
 }
 
+.card-img-top{
+    height: 40%;
+    max-height: 55%;
+}
+
+.row-card-upcoming{
+    height: 300px;
+}
+
+.card-body{
+    padding-bottom: 0px !important;
+}
+p.about-us{
+    // background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
 
 @media (min-width: 576px) { 
     .carousel-img{
         height: 400px;
+    }
+
+    .package-title{
+        font-size: 25px;
     }
 }
 
