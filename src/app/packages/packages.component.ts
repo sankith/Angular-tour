@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-packages',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PackagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router, private route:ActivatedRoute) {
+    this.route.params.forEach(e => {
+      console.log(e.packagename);
+    })
+   }
 
   ngOnInit(): void {
   }

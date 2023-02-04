@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {  } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+
 
 @Component({
   selector: 'app-about',
@@ -7,6 +9,8 @@ import {  } from "@fortawesome/free-solid-svg-icons";
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
+  faPlus = faPlus as IconProp;
+  faMinus = faMinus as IconProp;
 
   constructor() { }
 

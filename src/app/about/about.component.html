@@ -19,7 +19,7 @@ As per Hindu mythology, it is assumed that the holy river Ganga descended on the
     </div>
     <div class="row justify-content-center justify-content-sm-start row-cols-1 row-cols-sm-2">
         <div class="col pb-2 pb-sm-0">
-            <h5 style="font-weight: bold;">Highlights</h5>
+            <h5 style="font-weight: bold;">Inclusions</h5>
             <ul class="list-group w-auto ps-2">
                 <li class="list-group-item">We Provide Customized tour plans.</li>
                 <li class="list-group-item">Luxury Hotel's</li>
@@ -28,15 +28,58 @@ As per Hindu mythology, it is assumed that the holy river Ganga descended on the
             </ul>
         </div>
         <div class="col">
-            <h5 style="font-weight: bold;">Experience</h5>
+            <h5 style="font-weight: bold;">Exclusions</h5>
             <ul class="list-group w-auto ps-2">
                 <li class="list-group-item">We are having 15 years of Experience.</li>
                 <li class="list-group-item">Luxury Hotel's</li>
                 <li class="list-group-item">Travel kitchen for Home Food</li>
                 <li class="list-group-item">24/7 Availability</li>
             </ul>
-        </div>
-        
+        </div>  
+    </div>
+    <div class="row mt-2">
+        <accordion [isAnimated]="true">
+            <accordion-group panelClass="accordionClass" [isOpen]="true" #Highlights>
+                <span accordion-heading>
+                    <h5 class="pull-left float-left" style="font-weight: bold;">Highlights
+                        <fa-icon *ngIf="!Highlights?.isOpen" class="social-media-icons float-right" style="float: right;" [icon]="faPlus"></fa-icon>
+                        <fa-icon *ngIf="Highlights?.isOpen" class="social-media-icons float-right" style="float: right;" [icon]="faMinus"></fa-icon>
+                    </h5>
+                </span>
+                
+                <ul class="list-group w-auto ps-2">
+                    <li class="ms-5">We Provide Customized tour plans.</li>
+                    <li class="ms-5">Luxury Hotel's</li>
+                    <li class="ms-5">Travel kitchen for Home Food</li>
+                    <li class="ms-5">24/7 Availability</li>
+                </ul>
+            </accordion-group>
+          </accordion>
+    </div>
+    <div class="row mt-2">
+        <accordion [isAnimated]="true">
+            <accordion-group panelClass="accordionClass" [isOpen]="true" #terms>
+                <span accordion-heading>
+                    <h5 class="pull-left float-left" style="font-weight: bold;">Terms & Condtions
+                        <fa-icon *ngIf="!terms?.isOpen" class="social-media-icons float-right" style="float: right;" [icon]="faPlus"></fa-icon>
+                        <fa-icon *ngIf="terms?.isOpen" class="social-media-icons float-right" style="float: right;" [icon]="faMinus"></fa-icon>
+                    </h5>
+                </span>
+                
+                <ul class="list-group w-auto ps-2">
+                    <li class="ms-5">We Provide Customized tour plans.</li>
+                    <li class="ms-5">Luxury Hotel's</li>
+                    <li class="ms-5">Travel kitchen for Home Food</li>
+                    <li class="ms-5">24/7 Availability</li>
+                </ul>
+            </accordion-group>
+          </accordion>
+    </div>
+    <div class="row mt-2">
+        <h5 style="font-weight: bold;" class="mb-0 text-center">Contact Details</h5>
+        <Span class="text-center" style="font-size: 20px;">Sri LaxmiNarshima Tours</Span>
+        <br>
+
     </div>
 </div>
 

@@ -8,6 +8,10 @@ import { PackagesComponent } from './packages/packages.component';
 import { AboutComponent } from './about/about.component';
 import { BaselayoutComponent } from './baselayout/baselayout.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AccordionModule } from "ngx-bootstrap/accordion";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,11 +19,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PackagesComponent,
     AboutComponent,
     BaselayoutComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
+    AccordionModule,
+    BrowserAnimationsModule,
     FontAwesomeModule
   ],
   providers: [],

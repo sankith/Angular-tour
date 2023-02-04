@@ -1,4 +1,14 @@
-p.about-us{
-    border-radius: 10px;
-    text-align: justify;
+:host::ng-deep{
+
+    p.about-us{
+        border-radius: 10px;
+        text-align: justify;
+    }
+    
+    .panel.card.accordionClass{
+        .panel-heading.card-header.panel-enabled{
+            background-color: aliceblue !important;
+        }
+    }
+    
 }
