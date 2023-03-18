@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'packages', component: PackagesComponent },
-  { path: 'packages/:packagename', component: PackagesComponent },
+  { path: 'packages/:packagename', component: PackagesComponent, pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: '**', pathMatch: 'full', component: PagenotfoundComponent},  // Wildcard route for a 404 page
 ];

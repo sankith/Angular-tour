@@ -1,1 +1,77 @@
-<p>packages works!</p>
+
+<div class="row">
+    <div class="col w-100 text-center">
+        <h3>
+            {{ packageName }}
+        </h3>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <p>
+    Kashi has been the final pilgrimage spot for Hindus for ages. Often referred to as Benares, Varanasi is the oldest living city in the world. Hindus believe that one who is graced to die on the land of Kashi would attain salvation and freedom from the cycle of birth and re-birth. Abode of Lord Shiva and Parvati, the origins of Kashi are yet unknown. Ganges in Kashi is believed to have the power to wash away the sins of mortals.Kashi has also been a great center of learning for ages. Kashi is associated with promotion of spiritualism, mysticism, Sanskrit, yoga and Hindi language and honored authors such as the ever-famous novelist Prem Chand and Tulsi Das, the famous saint-poet who wrote Ram Charit Manas. Aptly called as the cultural capital of India, Varanasi has provided the right platform for all cultural activities to flourish. Many exponents of dance and music have come from Varanasi. Ravi Shankar, the internationally renowned Sitar maestro and Ustad Bismillah Khan, (the famous Shehnai player) are all sons of the blessed city or have lived here for major part of their lives.
+    </p>
+
+    <div class="row">
+        <div class="col w-100 text-center">
+            <h5>
+                Side Seeing
+            </h5>
+        </div>
+    </div>
+    <p>
+        Kashi is also called as Varanasi or Benaras. Kashi is said to be city of temples.Kashi have 2,000 temples. People from all parts of the world come to Kashi to visit these temples. Many important and famous temples are located at Ganga Ghats.The Kashi Vishwanath temple is the most famous and important temple of Varanasi. In this temple resides the guardian of the holy city, Lord Shiva. Other important temples of Varanasi are the new Vishwanath temple, the Sankat Mochan temple, the Durga temple, the Kal Bhairav temple ,the Mritunjaya temple etc.
+        The Ganga Ghats at kashi are full of pilgrims who flock to the place to take a dip in the holy Ganges, which is believed to absolve one from all sins.There are number of temples on the bank of the Ganga river in Varanasi. It is believed that people are cleansed physically, mentally and spiritually at Ganga Ghats. It is at the Ganga Ghats where we see life and death together. For thousands of years people have been thronging these Ghats to offer their morning prayers to the rising sun. There are more than 100 ghats along side Ganga in Varanasi. Some of the prominent and popular Ghats at Varanasi are the Dasaswamedh Ghat, Manikarnika Ghat, Harischandra Ghat, Kabir Ghat and Assi Ghat.
+    </p>
+
+    <div class="row justify-content-center justify-content-sm-start row-cols-1 row-cols-sm-2">
+        <div class="col pb-2 pb-sm-0">
+            <h5 style="font-weight: bold;">Package Details</h5>
+            <ul class="list-group w-auto ps-2">
+                <li class="ms-5">We Provide Customized tour plans.</li>
+                <li class="ms-5">Luxury Hotel's</li>
+                <li class="ms-5">Travel kitchen for Home Food</li>
+                <li class="ms-5">24/7 Availability</li>
+                <li class="ms-5">We are having 15 years of Experience.</li>
+                <li class="ms-5">Luxury Hotel's</li>
+                <li class="ms-5">Travel kitchen for Home Food</li>
+                <li class="ms-5">24/7 Availability</li>
+            </ul>
+        </div>  
+        <div class="col pb-2 pb-sm-0">
+            <h5 style="font-weight: bold;">Day-Wise Schedule</h5>
+            <ul class="list-group w-auto ps-2">
+                <li class="ms-5"><strong>Day 1</strong> We Provide Customized tour plans.</li>
+                <li class="ms-5"><strong>Day 2</strong> Luxury Hotel's</li>
+                <li class="ms-5"><strong>Day 3</strong> Travel kitchen for Home Food</li>
+                <li class="ms-5"><strong>Day 4</strong> 24/7 Availability</li>
+                <li class="ms-5"><strong>Day 5</strong> We are having 15 years of Experience.</li>
+                <li class="ms-5"><strong>Day 6</strong> Luxury Hotel's</li>
+                <li class="ms-5"><strong>Day 7</strong> Travel kitchen for Home Food</li>
+                <li class="ms-5"><strong>Day 8</strong> 24/7 Availability</li>
+            </ul>
+        </div> 
+    </div>
+
+    <div class="row mt-2">
+        <accordion [isAnimated]="true">
+            <accordion-group panelClass="accordionClass" [isOpen]="true" #Highlights>
+                <span accordion-heading>
+                    <h5 class="pull-left float-left" style="font-weight: bold;">Highlights
+                        <fa-icon *ngIf="!Highlights?.isOpen" class="social-media-icons float-right" style="float: right;" [icon]="faPlus"></fa-icon>
+                        <fa-icon *ngIf="Highlights?.isOpen" class="social-media-icons float-right" style="float: right;" [icon]="faMinus"></fa-icon>
+                    </h5>
+                </span>
+                
+                <ul class="list-group w-auto ps-2">
+                    <li class="ms-5">We Provide Customized tour plans.</li>
+                    <li class="ms-5">Luxury Hotel's</li>
+                    <li class="ms-5">Travel kitchen for Home Food</li>
+                    <li class="ms-5">24/7 Availability</li>
+                </ul>
+            </accordion-group>
+          </accordion>
+    </div>
+</div>
+
+
