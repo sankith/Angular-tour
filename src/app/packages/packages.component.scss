@@ -1,0 +1,29 @@
+.row-package{
+    height: auto;
+
+    .col{
+        height: 200px;
+    }
+}
+
+.package-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.figure{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.figure:hover{
+    transform: scale(1.1); 
+}
+
+@media (min-width: 576px) { 
+    .package-title{
+        font-size: 25px;
+    }
+}

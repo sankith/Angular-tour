@@ -1,45 +1,52 @@
 <section>
-<nav class="navbar navbar-expand-sm" style="background-color: orange;">
+<nav class="navbar navbar-expand-md bg-warning-subtle" style="background-color: orange;">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Sri LaxmiNarshima Tours</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <img src="./logo.png" alt="logo" srcset="">
+        Sri LaxmiNarshima Tours</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" role="link">Home</a>
           </li>
           <li class="nav-item dropdown package">
-            <a class="nav-link" routerLink="/packages" routerLinkActive="active" ariaCurrentWhenActive="page" role="button">
+            <a class="nav-link pb-md-0" routerLink="/packages" routerLinkActive="active" ariaCurrentWhenActive="page" role="link">
               Packages
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" routerLink="packages/kashi">Kashi</a></li>
-              <li><a class="dropdown-item" routerLink="packages/chardham">Chardham</a></li>
-              <li><a class="dropdown-item" routerLink="packages/gujarath">Gujarath</a></li>
-              <li><a class="dropdown-item" routerLink="packages/nepal">Nepal</a></li>
-              <li><a class="dropdown-item" routerLink="packages/Karnataka">Karnataka</a></li>
-              <li><a class="dropdown-item" routerLink="packages/Rameshwaram">Rameshwaram</a></li>
+            <ul class="dropdown-menu start-50 rounded-top-0 rounded-2 rounded-2 text-start ps-2 row gy-2" style="height: auto; width: 205px;">
+              <li class="p-0"><a class="dropdown-item" routerLink="packagedetails/kashi">Kashi</a></li>
+              <li class="p-0"><a class="dropdown-item" routerLink="packagedetails/chardham">Chardham</a></li>
+              <li class="p-0"><a class="dropdown-item" routerLink="packagedetails/gujarath">Gujarath</a></li>
+              <li class="p-0"><a class="dropdown-item" routerLink="packagedetails/nepal">Nepal</a></li>
+              <li class="p-0"><a class="dropdown-item" routerLink="packagedetails/Karnataka">Karnataka</a></li>
+              <li class="p-0"><a class="dropdown-item" routerLink="packagedetails/Rameshwaram">Rameshwaram</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+            <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" role="link">About Us</a>
           </li>
         </ul>
+
+        <form class="d-flex float-sm-end col-md-6 col-lg-4 col-sm-12" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
 
-  <div class="content-outlet mb-md-2">
+  <div class="content-outlet mb-3">
     <router-outlet></router-outlet>
   </div>  
 
-<div class="container-fluid footer ">
-  <div class="row p-2 justify-content-center">
-    <div class="col-auto col-md">
+<div class="container-fluid footer mt-2">
+  <div class="row p-2 my-4 justify-content-center gy-2 gy-sm-0">
+    <div class="col-auto col-md-5  d-flex align-items-center flex-column">
       <span>
-        <h5>Sri LaxmiNarshima Tours</h5>
+        <h5 class="text-center text-decoration-underline fs-3">Sri LaxmiNarshima Tours</h5>
         <Address>
         <fa-icon class="address-icons" [icon]="faLocationPin"></fa-icon>
            Nyalkal,Nizamabad. Telangana - 503230.
@@ -62,14 +69,40 @@
         </Address>
       </span>
     </div>
-    <div class="col d-md-block d-none">
-      <h6>Follow us On</h6>
-      <a target="_blank" href="https://www.facebook.com/srilaxminarsimhatours">
-        <fa-icon class="social-media-icons" [icon]="faFacebookSquare"></fa-icon>
-      </a><a target="_blank" href="https://www.instagram.com/srilaxminarsimhatours">
-        <fa-icon class="social-media-icons" [icon]="faInstagram"></fa-icon>
-      </a><a target="_blank" href="https://api.whatsapp.com/send?phone=9294000040">
-        <fa-icon class="social-media-icons" [icon]="faWhatsapp"></fa-icon>
+    <div class="col-auto col-md d-flex align-items-center flex-column">
+      <h5 class="text-center text-decoration-underline fs-3">Packages</h5>
+        <ul>
+          <li class="pb-1">
+            <a class="link-light text-decoration-none" href="">Kashi</a>
+          </li>
+          <li class="pb-1">
+            <a class="link-light text-decoration-none" href="">Gujarath</a>
+          </li>
+          <li class="pb-1">
+            <a class="link-light text-decoration-none" href="">Nepal</a>
+          </li>
+          <li class="pb-1">
+            <a class="link-light text-decoration-none" href="">Rameshwaram</a>
+          </li>
+          <li class="pb-1">
+            <a class="link-light text-decoration-none" href="">Karnataka</a>
+          </li>
+          <li class="pb-1">
+            <a class="link-light text-decoration-none" href="">Chardham</a>
+
+          </li>
+        </ul>
+    </div>
+    <div class="col-auto col-md d-flex align-items-center flex-column">
+      <h5 class="text-center text-decoration-underline fs-3">Follow us On</h5>
+      <a class="icon-link icon-link-hover link-primary pb-2" target="_blank" href="https://www.facebook.com/srilaxminarsimhatours">
+        <i class="social-media-icons bi bi-facebook"></i>/srilaxminarsimhatours
+      </a>
+      <a class="icon-link icon-link-hover link-danger pb-2" target="_blank" href="https://www.instagram.com/srilaxminarsimhatours">
+        <i class="social-media-icons bi bi-instagram"></i>/srilaxminarsimhatours
+      </a>
+      <a class="icon-link icon-link-hover link-success" target="_blank" href="https://api.whatsapp.com/send?phone=9294000040">
+        <i class="social-media-icons bi bi-whatsapp"></i>/srilaxminarsimhatours
       </a>
     </div>
   </div>

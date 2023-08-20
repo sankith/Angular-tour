@@ -11,6 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AccordionModule } from "ngx-bootstrap/accordion";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PackageDetailsComponent } from './packages/package-details/package-details.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     AboutComponent,
     BaselayoutComponent,
     PagenotfoundComponent,
+    PackageDetailsComponent,
   ],
   imports: [
     BrowserModule,

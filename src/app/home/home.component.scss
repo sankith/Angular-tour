@@ -21,12 +21,42 @@
     background-color: black;
 }
 
+.test{
+    position: relative;
+    animation-name: horizontal-scroll;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+}
+
+.figure{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.figure:hover{
+    transform: scale(1.1); 
+}
+
+.test:hover{
+    // animation-play-state: paused;
+}
+
 .row-card{
     overflow: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
+}
+
+
+@keyframes horizontal-scroll {
+    0% {left: 0;}
+    100% {left: -150%;}
 }
 
 .viewmore{
@@ -61,7 +91,8 @@
 }
 
 .row-card-upcoming{
-    height: 300px;
+    height: 310px;
+   
 }
 
 .card-body{
