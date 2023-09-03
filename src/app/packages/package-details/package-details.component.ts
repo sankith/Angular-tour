@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from '@fortawesome/fontawesome-svg-core';

@@ -1,0 +1,122 @@
+.package-img{
+    height: 200px;
+    width: auto;
+    animation-name: scaleImg;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+.day-wise-list, ol{
+    line-height: 30px;
+    
+}
+
+li{
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.itenerary-day{
+    animation: itenerary-day-animate;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+.itenerary-day-details{
+    animation: itenerary-day-details-animate;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes itenerary-day-details-animate {
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes itenerary-day-animate {
+    100%{
+        transform:rotate3d(1,1,1,360deg)
+    }
+}
+
+.visiting-places{
+    animation-name: slideInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+.package-duration{
+    animation-name: slideInFromRight;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+.package-cost{
+    animation-name: slideInFromLeft;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+@keyframes scaleImg {
+    0%{
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(200%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+}
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+}
+
+.visiting-places-list{
+    flex-flow: wrap;
+    .place::after{
+        content: '--';
+        padding-left: 0.25rem;
+    }
+}
+
+
+@media (min-width:768px) {
+    .package-img{
+        height: 350px;
+    }
+}
+
+@media (min-width:992px) {
+    .package-img{
+        height: 450px;
+    }
+}
+
+@media (min-width:1200px) {
+    .package-img{
+        height: 450px;
+    }
+}

@@ -21,11 +21,11 @@
     background-color: black;
 }
 
-.test{
+.scroll-animate{
     position: relative;
     animation-name: horizontal-scroll;
-    animation-timing-function: linear;
-    animation-duration: 30s;
+    animation-timing-function:linear;
+    animation-duration: 20s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction:normal;
@@ -41,8 +41,8 @@
     transform: scale(1.1); 
 }
 
-.test:hover{
-    // animation-play-state: paused;
+.pause{
+    animation-play-state: paused;
 }
 
 .row-card{
