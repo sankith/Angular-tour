@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, Route } from '@angular/router';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookSquare, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
-import { faLocationPin, faContactCard, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-baselayout',
@@ -9,17 +9,29 @@ import { faLocationPin, faContactCard, faPhone, faUser } from '@fortawesome/free
   styleUrls: ['./baselayout.component.scss']
 })
 export class BaselayoutComponent implements OnInit {
-  faFacebookSquare = faFacebookSquare;
-  faInstagram = faInstagram;
-  faWhatsapp = faWhatsapp;
+
   faLocationPin = faLocationPin as IconProp;
-  faContactCard = faContactCard as IconProp;
-  faPhone = faPhone as IconProp;
-  faUser = faUser as IconProp;
+  router!: Route;
 
   constructor() { }
  
   ngOnInit(): void {
+    let element = document.getElementById('home')
+    element?.classList.add('active')
   }
 
+  changeActive(event: any){
+    
+    let ids = ['home', 'packages', 'aboutus']
+    ids.forEach((id)=> {
+      let element = document.getElementById(id)
+      if (id == event.target.parentElement.id || id == event.target.id){
+        element?.classList.add('active')
+      }
+      else{
+        element?.classList.remove('active')
+      }
+
+    })
+  }
 }
