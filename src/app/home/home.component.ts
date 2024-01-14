@@ -17,20 +17,4 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  disableAnimation(){
-    let elements = document.getElementsByClassName("upcoming")
-    for (let index = 0; index < elements.length; index++) {
-      const element = elements.item(index);
-      element?.classList.add('pause');
-    }   
-  }
-
-  enableAnimation(){
-    let elements = document.getElementsByClassName("upcoming")
-    for (let index = 0; index < elements.length; index++) {
-      const element = elements.item(index);
-      element?.classList.remove('pause')
-    }   
-  }
 }

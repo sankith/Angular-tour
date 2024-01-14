@@ -1,245 +1,290 @@
 <section class="text-dark">
-  <carousel [noPause]="false">
-    <slide>
-      <img src="../assets/images/download (1).jpg" class="carousel-img" alt="first slide" style="display: block; width: 100%;">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </slide>
-    <slide>
-      <img src="../assets/images/download.jpg" class="carousel-img" alt="second slide" style="display: block; width: 100%;">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </slide>
-    <slide>
-      <img src="../assets/images/images.jpg" class="carousel-img" alt="third slide" style="display: block; width: 100%;">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </slide>
-  </carousel>
-
-<div class="container-fluid mt-5">
-    <div class="row text-center">
-      <h6 style="font-size: 25px !important;">Up Comming Yatra's</h6> 
-    </div>
-    <div class="row pb-3 row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 row-card row-card-upcoming">
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/kashi.jpg" class="img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">kashi</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2  text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/dwarka.jpg" class=" img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">Gujarath</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2  text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/murdeshwar.jpg" class=" img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">Karnataka</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2  text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/rameshwaram.jpg" class=" img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">Rameshwaram</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2  text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/s.png" class=" img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">Nepal</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2 text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
+  <div class="container-fluid mt-5">
+      <div class="row text-center">
+        <h6 style="font-size: 25px !important;">UPCOMING <span style="color: #ED952B;">YATRA'S</span> </h6> 
       </div>
 
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/kashi.jpg" class="img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
+      <div class="card-group gap-5 justify-content-center">
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h6 class="card-title fs-3">kashi</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2  text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
           </div>
         </div>
-      </div>
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/dwarka.jpg" class=" img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">Gujarath</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2  text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/murdeshwar.jpg" class=" img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">Karnataka</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2  text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/rameshwaram.jpg" class=" img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">Rameshwaram</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2  text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="upcoming scroll-animate col-6 col-md-4 col-lg-3" (mouseover)="disableAnimation()" (mouseout)="enableAnimation()">
-        <div class="card h-100  rounded-3">
-          <img src="../../assets/images/s.png" class=" img-fluid img-thumbnail object-fit-fill" style="height: 60%;" alt="...">
-          <div class="card-body">
-            <h6 class="card-title fs-3">Nepal</h6>
-            <h4 class="card-subtitle mb-2 text-muted ">Dt: 08/02/2023</h4>
-            <!-- <p class="card-text text-truncate">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-            <!-- <div class="d-flex text-center" style="flex-direction:column;">
-              <a type="button" class="viewmore mb-3 ms-2 text-end">Read more>></a>
-              <button type="button" class="btn btn btn-success">Get A Quote</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="row">
-      <span class="text-end my-1">See More</span>
-    </div> -->
-</div>
 
-<div class="container-fluid d-flex flex-column mt-5">
-  <div class="row text-center mb-3">
-    <h6 style="font-size: 25px !important;">Our Packages</h6> 
-  </div>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 gy-5 row-package">
-    <div class="col col-md-auto text-center">
-      <figure class="figure h-100" style="cursor: pointer;" [routerLink]="['/packagedetails','kashi']">
-        <img src="../../assets/images/kashi.jpg" style="object-fit: contain;" class="figure-img rounded-4 h-100" alt="...">
-        <h6 class="figure-caption package-title text-center text-dark">kashi</h6>
-      </figure>
-    </div>
-    <div class="col col-md-auto text-center">
-      <figure class="figure h-100" style="cursor: pointer;" [routerLink]="['/packagedetails','Gujarath']">
-        <img src="../../assets/images/dwarka.jpg" class="figure-img rounded-4 h-100" alt="...">
-        <h6 class="figure-caption package-title text-center text-dark">Gujarath</h6>
-      </figure>
-    </div>
-    <div class="col col-md-auto text-center">
-      <figure class="figure h-100" style="cursor: pointer;" [routerLink]="['/packagedetails','Chardham']">
-        <img src="../../assets/images/kedarnath.jpg" class="figure-img rounded-4 h-100" alt="...">
-        <h6 class="figure-caption package-title text-center text-dark">Chardham</h6>
-      </figure>
-    </div>
-    <div class="col col-md-auto text-center">
-      <figure class="figure h-100" style="cursor: pointer;" [routerLink]="['/packagedetails','rameshwaram']">
-        <img src="../../assets/images/kedarnath.jpg" class="figure-img rounded-4 h-100" alt="...">
-        <h6 class="figure-caption package-title text-center text-dark">Rameshwaram</h6>
-      </figure>
-    </div>
-    <div class="col col-md-auto text-center">
-      <figure class="figure h-100" style="cursor: pointer;" [routerLink]="['/packagedetails','karnataka']">
-        <img src="../../assets/images/murdeshwar.jpg" class="figure-img rounded-4 h-100" alt="...">
-        <h6 class="figure-caption package-title text-center text-dark">Karnataka</h6>
-      </figure>
-    </div>
-  </div>
-</div>
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
 
-<div class="container-fluid mt-3">
-  <div class="row text-center">
-    <h6 style="font-size: 25px !important;">About US</h6> 
-  </div>
-  <div style="background-color: aliceblue;">
-      <p class="about-us pb-0 mb-0" >
-        <span>The Char Dham (meaning: four abodes) is a set of four pilgrimage sites in India.[1] It is believed that visiting these sites helps achieve moksha (salvation). The four Dhams are, Badrinath, Dwarka, Puri and Rameswaram. It is believed that every Hindu should visit the Char Dhams during one's lifetime. The Char Dham as defined by Adi Shankaracharya consists of four Hindu pilgrimage sites.[2] These main 'dhamas' are the shrines of Lord Vishnu and Rameshwaram is a shrine of lord Shiva. All the 'dhamas' are related to four epochs,(1) Dham of Satyuga- Badrinath, Uttarakhand (2) Dham of Tretayuga -Rameswaram, Tamil Nadu (3) Dham of Dwaparayuga - Dvaraka, Gujarat (4) Dham of Kaliyuga - Jagannatha Puri, Odisha.
-        Another small circuit in Uttarakhand of four pilgrimage sites-Yamunotri, Gangotri, Kedarnath, and Badrinath is referred to as Chota Char Dham which is locally popular in North India...
-        </span>
-      </p>
-      <!-- <div> -->
-        <a class="ellipsis d-flex justify-content-end pt-0 pe-2 pb-2" style="cursor: pointer;" routerLink="/about">Read More</a>
-      <!-- </div> -->
-  </div>
-  
-</div>
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
 
-<!-- <div class="row container-fluid text-center my-2">
-  <div class="col d-md-none">
-    <h6 style="font-size: 20px; text-decoration: underline;">Follow us On</h6>
-    <a target="_blank" href="https://www.facebook.com/srilaxminarsimhatours">
-      <fa-icon class="social-media-icons" [icon]="faFacebookSquare"></fa-icon>
-    </a><a target="_blank" href="https://www.instagram.com/srilaxminarsimhatours">
-      <fa-icon class="social-media-icons" [icon]="faInstagram"></fa-icon>
-    </a><a target="_blank" href="https://api.whatsapp.com/send?phone=9294000040">
-      <fa-icon class="social-media-icons" [icon]="faWhatsapp"></fa-icon>
-    </a>
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="row header-info">
+              <div class="col">
+                <span class="card-title">
+                  <h5 class="m-0">Karnataka</h5>
+                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
+                </span>
+              </div>
+              <div class="col text-end align-self-end">
+                $15000/-
+              </div>
+            </div>
+            <p class="card-text pt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="row text-center mt-5">
+        <h6 style="font-size: 25px !important;">OUR <span style="color: #ED952B;">PACKAGES</span> </h6> 
+      </div>
+
+      <div class="card-group gap-5 justify-content-center">
+        <div class="card ourpackage-card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col align-self-center">
+                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+              </div>
+              <div class="col text-end">
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+
+        <div class="card ourpackage-card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col align-self-center">
+                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+              </div>
+              <div class="col text-end">
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+
+        <div class="card ourpackage-card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col align-self-center">
+                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+              </div>
+              <div class="col text-end">
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      
+        <div class="card ourpackage-card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col align-self-center">
+                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+              </div>
+              <div class="col text-end">
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+        
+        <div class="card ourpackage-card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col align-self-center">
+                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+              </div>
+              <div class="col text-end">
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
   </div>
-</div> -->
 </section>

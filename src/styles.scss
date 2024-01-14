@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~perfect-scrollbar/css/perfect-scrollbar";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital&display=swap');
+
 .ps-container > .ps-scrollbar-x-rail{
     opacity: 0.6;
 }
