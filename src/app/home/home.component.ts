@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {HostListener} from '@angular/core';
 import { faFacebookSquare, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import { Router } from '@angular/router';
+import { AppService } from "../services/app.service";
 
 
 @Component({
@@ -13,8 +15,10 @@ export class HomeComponent implements OnInit {
   faInstagram = faInstagram;
   faWhatsapp = faWhatsapp;
 
-  constructor() { }
+  constructor(private router: Router, private appService: AppService) { 
+  }
 
   ngOnInit(): void {
+    this.appService.setUrl(this.router.url);
   }
 }

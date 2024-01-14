@@ -1,3 +1,37 @@
+.header-info{
+    // border-bottom: 1px solid;
+    .image{
+        border-left: 2px solid #ED952B;
+    }
+}
+
+.card{
+    border: 1px solid #7070705A !important;
+}
+
+.itinary-row{
+    margin-bottom: 10px;
+}
+
+.itinary-day{
+    width: 20%;
+}
+
+.itinary-details{
+    width: 80%;
+    overflow-wrap: anywhere;
+    border-left: 5px solid #ED952B;
+}
+
+.card-title{
+    color: #ED952B;
+}
+
+.card-group{
+    flex-flow: nowrap !important;
+    overflow-x: auto;
+}
+
 .row-package{
     height: auto;
 
@@ -22,8 +56,49 @@
     transform: scale(1.1); 
 }
 
+
+
 @media (min-width: 576px) { 
-    .package-title{
-        font-size: 25px;
-    }
+    .card{
+        width: calc(100vw / 2.5);
+        min-width: calc(100vw / 2.5);
+        max-width: calc(100vw / 2.5);
+    } 
 }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .card{
+        width: calc(100vw / 3);
+        min-width: calc(100vw / 3);
+        max-width: calc(100vw / 3);
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .card{
+        width: calc(100vw / 3);
+        min-width: calc(100vw / 3);
+        max-width: calc(100vw / 3);
+    }
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .card{
+        width: calc(100vw / 4);
+        min-width: calc(100vw / 4);
+        max-width: calc(100vw / 4);
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    .card{
+        width: calc(100vw / 5);
+        min-width: calc(100vw / 5);
+        max-width: calc(100vw / 5);
+    }
+ }
+

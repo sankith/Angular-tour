@@ -15,14 +15,14 @@
         <div class="col-auto w-50 align-self-end">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-lg-0 w-100 justify-content-center">
-              <li class="nav-item" id="home" (click)="changeActive($event)">
-                <span class="nav-link" routerLink="/home">HOME</span>
+              <li class="nav-item" id="home" (click)="changeActive($event)" routerLink="/home">
+                <span class="nav-link">HOME</span>
               </li>
-              <li class="nav-item" id="packages" (click)="changeActive($event)">
-                <span class="nav-link" routerLink="/packages">PACKAGES</span>
+              <li class="nav-item" id="packages" (click)="changeActive($event)" routerLink="/packages">
+                <span class="nav-link">PACKAGES</span>
               </li>
-              <li class="nav-item" id="aboutus" (click)="changeActive($event)">
-                <span class="nav-link" routerLink="/about">ABOUT US</span>
+              <li class="nav-item" id="about" (click)="changeActive($event)" routerLink="/about">
+                <span class="nav-link">ABOUT US</span>
               </li>
             </ul>
           </div>
@@ -35,7 +35,31 @@
     </div>
   </nav>
 
-  <div class="container w-75 filter-container d-none d-md-flex">
+  <div class="container w-50 filter-container d-none d-md-flex" *ngIf = "showBox == 'packages'">
+    <div class="row w-100 align-items-center text-center">
+      <div class="col h-75" style="border-right: 2px dashed #777777;">
+        <div style="position: relative; top: 25%;">
+          <label for="packageduration" class="form-label" style="color: #646464;">Package Duration</label>
+          <br>
+          <span id="packageduration" style="color: #ED952B; font-style: bold;">
+            9 NIGHTS - 10 DAYS
+          </span>
+        </div>
+        
+      </div>
+      <div class="col h-75">
+        <div style="position: relative; top: 25%;">
+          <label for="packagecost" class="form-label" style="color: #646464;">Package Cost</label>
+          <br>
+          <span id="packageduration" style="color: #ED952B; font-style: bold;">          
+            20,000/- PER PERSON
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container w-75 filter-container d-none d-md-flex"  *ngIf = "showBox == 'home'">
     <div class="row w-100 align-items-center">
       <div class="col">
           <label for="destinationselector" class="form-label">Select Your Destination</label>
