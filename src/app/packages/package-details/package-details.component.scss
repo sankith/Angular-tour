@@ -1,122 +1,153 @@
-.package-img{
-    height: 200px;
-    width: auto;
-    animation-name: scaleImg;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-}
-
-.day-wise-list, ol{
-    line-height: 30px;
-    
-}
-
-li{
-    list-style: disc;
-    list-style-position: inside;
-}
-
-.itenerary-day{
-    animation: itenerary-day-animate;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-timing-function: linear;
-}
-
-.itenerary-day-details{
-    animation: itenerary-day-details-animate;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-timing-function: linear;
-}
-
-@keyframes itenerary-day-details-animate {
-    0%{
-        transform: translateY(200%);
-    }
-    100%{
-        transform: translateY(0%);
+.header-info{
+    // border-bottom: 1px solid;
+    .image{
+        border-left: 2px solid #ED952B;
     }
 }
 
-@keyframes itenerary-day-animate {
-    100%{
-        transform:rotate3d(1,1,1,360deg)
+.card{
+    border: 1px solid #7070705A !important;
+}
+
+.itinary-row{
+    margin-bottom: 10px;
+}
+
+.itinary-day{
+    width: 20%;
+    font: normal normal bold 30px/40px Roboto;
+    letter-spacing: 0px;
+    color: #646464;
+}
+
+.pkgn-inxl-title{
+    font: normal normal bold 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #646464;
+}
+
+
+.itinary-details{
+    width: 80%;
+    overflow-wrap: anywhere;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000005E;
+    border-radius: 29px;
+    opacity: 1;
+    font: normal normal normal 23px/28px Roboto;
+    letter-spacing: 0.23px;
+    color: #646464;
+    border-left: 5px solid #ED952B;
+
+}
+
+
+.card-title{
+    color: #ED952B;
+}
+
+.pkg-inxl{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #40404066;
+    border-radius: 12px;
+
+    .card-title{
+        padding: 10px 30px;
     }
 }
 
-.visiting-places{
-    animation-name: slideInFromLeft;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
+.visiting-places-title{
+    text-align: center;
+    letter-spacing: NaNpx;
+    color: #ED952B;
+    font: normal normal 900 25px/34px Roboto;
 }
 
-.package-duration{
-    animation-name: slideInFromRight;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
+li.pkg-inxl-li {
+    list-style: none;
+    padding: 10px 30px;
+    background-image: url('/assets/images/bullet.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+
+    font: normal normal normal 21px/26px Roboto;
+    letter-spacing: 0.23px;
+    color: #646464;
+}
+       
+.card-group{
+    flex-flow: nowrap !important;
+    overflow-x: auto;
 }
 
-.package-cost{
-    animation-name: slideInFromLeft;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-}
+.row-package{
+    height: auto;
 
-@keyframes scaleImg {
-    0%{
-        transform: scale(0);
-      }
-      100% {
-        transform: scale(1);
-      }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(200%);
-      }
-      100% {
-        transform: translateX(0%);
-      }
-}
-
-@keyframes slideInFromLeft{
-    0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(0);
-      }
-}
-
-.visiting-places-list{
-    flex-flow: wrap;
-    .place::after{
-        content: '--';
-        padding-left: 0.25rem;
+    .col{
+        height: 200px;
     }
 }
 
-
-@media (min-width:768px) {
-    .package-img{
-        height: 350px;
-    }
+.package-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
 
-@media (min-width:992px) {
-    .package-img{
-        height: 450px;
-    }
+.figure{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
-@media (min-width:1200px) {
-    .package-img{
-        height: 450px;
-    }
+.figure:hover{
+    transform: scale(1.1); 
 }
+
+
+
+@media (min-width: 576px) { 
+    .card{
+        width: calc(100vw / 2.5);
+        min-width: calc(100vw / 2.5);
+        max-width: calc(100vw / 2.5);
+    } 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .card{
+        width: calc(100vw / 3);
+        min-width: calc(100vw / 3);
+        max-width: calc(100vw / 3);
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .card{
+        width: calc(100vw / 3);
+        min-width: calc(100vw / 3);
+        max-width: calc(100vw / 3);
+    }
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .card{
+        width: calc(100vw / 4);
+        min-width: calc(100vw / 4);
+        max-width: calc(100vw / 4);
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    .card{
+        width: calc(100vw / 5);
+        min-width: calc(100vw / 5);
+        max-width: calc(100vw / 5);
+    }
+ }
+

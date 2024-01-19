@@ -38,7 +38,7 @@ export class BaselayoutComponent implements OnInit {
 
   changeActive(event: any){
     
-    let ids = ['home', 'packages', 'about']
+    let ids = ['home', 'packages', 'packagedetails', 'about']
     ids.forEach((id)=> {
       let element = document.getElementById(id)
       if (typeof(event) == "string"){

@@ -17,14 +17,6 @@ export class PackagesComponent implements OnInit {
   ngOnInit(): void {
     this.appService.setUrl(this.router.url);
 
-    let ititnaries = document.getElementsByClassName('itinary-details');
-    let firstItinaryDetails = ititnaries[0] as HTMLElement;
-    let secondItinaryDetails = ititnaries[ititnaries.length -1] as HTMLElement;
-    // firstItinaryDetails.style.borderTopLeftRadius = '5px';
-    // firstItinaryDetails.style.borderTopRightRadius = '5px';
-    // secondItinaryDetails.style.borderBottomLeftRadius = '5px';
-    // secondItinaryDetails.style.borderBottomRightRadius = '5px';
-
   }
 
 }
