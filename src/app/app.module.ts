@@ -12,6 +12,8 @@ import { AccordionModule } from "ngx-bootstrap/accordion";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PackageDetailsComponent } from './packages/package-details/package-details.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,10 @@ import { PackageDetailsComponent } from './packages/package-details/package-deta
     CarouselModule.forRoot(),
     AccordionModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
