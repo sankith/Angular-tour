@@ -8,23 +8,29 @@
           <a class="navbar-brand fw-bold" href="#" style="color: #FFFFFF;">
             <!-- <img src="/assets/images/s.png" alt=""> --> TRAVEL LOGO
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
         <div class="col-auto w-50 align-self-end">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-lg-0 w-100 justify-content-center">
-              <li class="nav-item" id="home" (click)="changeActive($event)" routerLink="/home">
-                <span class="nav-link">HOME</span>
-              </li>
-              <li class="nav-item" id="packages" (click)="changeActive($event)" routerLink="/packages">
-                <span class="nav-link">PACKAGES</span>
-              </li>
-              <li class="nav-item" id="about" (click)="changeActive($event)" routerLink="/about">
-                <span class="nav-link">ABOUT US</span>
-              </li>
-            </ul>
+          <div class="offcanvas offcanvas-end" id="navbarOffcanvas">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #FFFFFF;">SriLaxmiNarsimha Tours</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-lg-0 w-100 flex-grow-1 justify-content-center">
+                <li class="nav-item" id="home" data-bs-dismiss="offcanvas" (click)="changeActive($event)" routerLink="/home">
+                  <span class="nav-link">HOME</span>
+                </li>
+                <li class="nav-item" id="packages" data-bs-dismiss="offcanvas" (click)="changeActive($event)" routerLink="/packages">
+                  <span class="nav-link">PACKAGES</span>
+                </li>
+                <li class="nav-item" id="about" data-bs-dismiss="offcanvas" (click)="changeActive($event)" routerLink="/about">
+                  <span class="nav-link">ABOUT US</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="col w-25 d-none d-md-flex justify-content-end">
@@ -86,7 +92,7 @@
 
 <div class="container-fluid footer mt-2">
   <div class="row footer-row">
-    <div class="row h-75 p-2 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex gy-3 gy-md-4 gy-lg-0">
+    <div class="row h-75 p-2 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex gy-4 gy-md-4 gy-lg-0">
       <div class="col-sm-12 flex-column d-flex align-items-center align-self-center">
         <span class="text-center">
           <h5 class="text-center text-decoration-underline travel-logo fs-3">TRAVEL LOGO</h5>
@@ -103,8 +109,8 @@
       </div>
       <div class="col-sm-12 flex-column d-flex align-items-center align-self-center">
         <h5 class="text-center text-decoration-underline fs-3 footer-label-title">OUR CONTACTS</h5>
-        <Address>
-            <ul class="foo-content">
+        <Address class="mb-0">
+            <ul class="foo-content mb-0">
               <li class="pb-1 list-unstyled">
                 <img src="../../assets/images/location.png" class="address-icons" alt="">Nyalkal,Nizamabad. Telangana - 503230.
               </li>

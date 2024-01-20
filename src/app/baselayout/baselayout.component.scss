@@ -160,6 +160,10 @@ label[for='packagecost'], label[for='packageduration']{
     background-position: 95%;
 }
 
+#navbarOffcanvas{
+    background: #D58423 !important;
+}
+
 @media (min-width: 576px) { 
     .package:hover .dropdown-menu{
         display:block;

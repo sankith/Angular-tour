@@ -23,7 +23,7 @@ export class BaselayoutComponent implements OnInit {
         setTimeout(() => {
           let page = this.currentUrl.split('/')[1];
           this.showBox = page;
-            this.changeActive(page)
+            this.changeActive(page == 'packagedetails' ? 'packages' : page)
           }, 3);
       }
     })

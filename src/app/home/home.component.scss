@@ -60,9 +60,14 @@
     background-image: url('/assets/images/image.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
+    height: calc(100vw / 3);
+    min-height: calc(100vw / 3);
+    max-height: calc(100vw / 3);
+
     .card-body .row{
         position: relative;
-        top: 80%;
+        top: 70%;
     }
     
 }
@@ -75,9 +80,14 @@
     }
 
     .ourpackage-card{
-        height: calc(100vw / 5.5);
-        min-height: calc(100vw / 5.5);
-        max-height: calc(100vw / 5.5);
+        height: calc(100vw / 4);
+        min-height: calc(100vw / 4);
+        max-height: calc(100vw / 4);
+
+        .card-body .row{
+            position: relative;
+            top: 75%;
+        }
     }
     
 }
@@ -95,6 +105,7 @@
         min-height: calc(100vw / 6);
         max-height: calc(100vw / 6);
     }
+
  }
 
 // Large devices (desktops, 992px and up)
@@ -109,6 +120,11 @@
         height: calc(100vw / 6);
         min-height: calc(100vw / 6);
         max-height: calc(100vw / 6);
+
+        .card-body .row{
+            position: relative;
+            top: 80%;
+        }
     }
  }
 
