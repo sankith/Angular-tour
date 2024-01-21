@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   faFacebookSquare = faFacebookSquare;
   faInstagram = faInstagram;
   faWhatsapp = faWhatsapp;
+  viewMore = false;
 
   constructor(private router: Router, private appService: AppService) { 
   }

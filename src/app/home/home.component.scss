@@ -72,6 +72,19 @@
     
 }
 
+.card-group{
+    flex-flow: nowrap ;
+    overflow-x: auto;
+}
+
+.card-img-top{
+    height: 125px;
+}
+
+.viewmore-btn{
+    width: 25%;
+}
+
 @media (min-width: 576px) { 
     .card, .ourpackage-card{
         width: calc(100vw / 2.5);
@@ -106,6 +119,10 @@
         max-height: calc(100vw / 6);
     }
 
+    .viewmore-btn{
+        width: 15%;
+    }
+
  }
 
 // Large devices (desktops, 992px and up)
@@ -126,6 +143,10 @@
             top: 80%;
         }
     }
+
+    .viewmore-btn{
+        width: 10%;
+    }
  }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -140,6 +161,10 @@
         height: calc(100vw / 7);
         min-height: calc(100vw / 7);
         max-height: calc(100vw / 7);
+    }
+
+    .viewmore-btn{
+        width: 9%;
     }
  }
 
