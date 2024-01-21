@@ -13,7 +13,7 @@
           </button>
         </div>
         <div class="col-auto w-50 align-self-end">
-          <div class="offcanvas offcanvas-end d-block" tabindex="-1" id="navbarOffcanvas">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #FFFFFF;">SriLaxmiNarsimha Tours</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -86,7 +86,7 @@
 
 
 
-<div class="content-outlet mb-3" [ngClass]="showBox == 'about' || showBox == 'packages' ? 'mt-0' : 'mt-5'">
+<div class="content-outlet mb-3" [ngClass]="showBox == 'about' || showBox == 'packages' ? 'mt-0' : 'mt-3 mt-3 mt-md-5'">
   <router-outlet></router-outlet>
 </div>  
 
