@@ -12,9 +12,7 @@
 }
 
 .nav-bar-container{
-    // height: 75px !important;
-    height: 50px !important;
-
+    height: 65px !important;
 }
 
 .package-structure{
@@ -177,6 +175,10 @@ label[for='packagecost'], label[for='packageduration']{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    .nav-bar-container{
+        height: 50px !important;
+    }
+
     .home-nav-link{
         color: #FFFFFF !important;
     }

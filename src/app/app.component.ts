@@ -39,10 +39,19 @@ export class AppComponent {
   onSubmit(){
     console.log(this.userDetails.value)
 
-    let url =  'https://api.whatsapp.com/send?phone=9294000040'
+    const message = encodeURIComponent(`Hi,
+    \nI Would like to know more details about the below tour.
+    \nName: ${this.userDetails.controls['name'].value}
+    \nEmail: ${this.userDetails.controls['email'].value}
+    \nPhone: ${this.userDetails.controls['phone'].value}
+    \nTour: ${this.userDetails.controls['tour'].value}`);
+
+    let url =  `https://wa.me/9294000040?text=${message}`;
     window.open(url, "_blank");
     
 
     this.modalRef?.close();
   }
+
+   
 }

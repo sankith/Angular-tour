@@ -56,6 +56,10 @@
     }
 }
 
+.viewmore-btn{
+    width: 30%;
+}
+
 .visiting-places-title{
     text-align: center;
     letter-spacing: NaNpx;
@@ -167,6 +171,10 @@ label[for='packagecost'], label[for='packageduration']{
         max-width: calc(100vw / 3);
     }
 
+    .viewmore-btn{
+        width: 15%;
+    }
+
     .itinary-day{
         width: 20%;
     }
@@ -196,6 +204,10 @@ label[for='packagecost'], label[for='packageduration']{
         max-width: calc(100vw / 3);
     }
 
+    .viewmore-btn{
+        width: 10%;
+    }
+
     .bg-image{
         min-height: 400px;
     }
@@ -211,6 +223,10 @@ label[for='packagecost'], label[for='packageduration']{
         width: calc(100vw / 4);
         min-width: calc(100vw / 4);
         max-width: calc(100vw / 4);
+    }
+
+    .viewmore-btn{
+        width: 9%;
     }
  }
 
