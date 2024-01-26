@@ -3,6 +3,7 @@
     min-height: 350px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
 }
 
 .bg-without-image{
@@ -11,7 +12,9 @@
 }
 
 .nav-bar-container{
-    height: 75px !important;
+    // height: 75px !important;
+    height: 50px !important;
+
 }
 
 .package-structure{
@@ -44,7 +47,7 @@
 .nav-link, .nav-link.active{
     cursor: pointer;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #646464;
     border: none;
     font: normal normal normal 21px/33px Roboto;
     letter-spacing: 0px;
@@ -174,6 +177,10 @@ label[for='packagecost'], label[for='packageduration']{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    .home-nav-link{
+        color: #FFFFFF !important;
+    }
+    
     .social-media-icons{
         height: 28px;
         width: 28px;
@@ -189,13 +196,12 @@ label[for='packagecost'], label[for='packageduration']{
         background: none !important;
     }
 
-    // .nav-link, .nav-link.active{
-    //     border-bottom: 1px solid #646464;
-    // }
+    .home-nav-item{
+        border-bottom: 1px solid #FFFFFF !important;
+    }
 
     .nav-item{
         border-bottom: 1px solid #646464;
-    //     // border-bottom: 1px solid #FFFFFF; if on image
         padding: 0px 16px;
     }
 
@@ -203,17 +209,12 @@ label[for='packagecost'], label[for='packageduration']{
         border-bottom: 3px solid #D58423 !important;
     }
 
-    // .navbar-nav{
-    //     border-bottom: 1px solid #646464;
-    //     // border-bottom: 1px solid #FFFFFF; if on image
-    // }
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .nav-item{
         padding: 0px 35px;
-    //     // border-bottom: 1px solid #FFFFFF; if on image
     }
  }
 
@@ -221,7 +222,6 @@ label[for='packagecost'], label[for='packageduration']{
 @media (min-width: 1200px) { 
     .nav-item{
         padding: 0px 50px;
-    //     // border-bottom: 1px solid #FFFFFF; if on image
     }
  }
 
@@ -229,7 +229,6 @@ label[for='packagecost'], label[for='packageduration']{
 @media (min-width: 1400px) { 
     .nav-item{
         padding: 0px 68px;
-    //     // border-bottom: 1px solid #FFFFFF; if on image
     }
  }
 

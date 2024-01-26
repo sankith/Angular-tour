@@ -1,295 +1,340 @@
 <section class="text-dark">
-  <div class="container-fluid mt-0 mt-md-5">
-      <div class="row text-center">
-        <h6 style="font: normal normal bold 25px/34px Roboto; color: #646464;">UPCOMING <span style="color: #ED952B;">YATRA'S</span> </h6> 
+  <!-- <div class="bg-image">
+    <div class="container w-75 filter-container d-none d-md-flex">
+      <div class="row w-100 align-items-center">
+        <div class="col">
+            <label for="destinationselector" class="form-label">Select Your Destination</label>
+            <input type="text" class="form-control" id="destinationselector" placeholder="All Destinations">
+        </div>
+        <div class="col">
+          <label for="dateselector" class="form-label">Select Your Date</label>
+            <input type="date" class="form-control" id="dateselector" placeholder="mm-dd-yyyy">
+        </div>
+        <div class="col">
+          <label for="pricerangeselector" class="form-label">Select Price Range</label>
+          <input type="range" class="form-range" min="0" max="5" step="0.5" id="pricerangeselector">
+        </div>
       </div>
+    </div>
+  </div> -->
+  
 
-      <div class="mx-3 row card-group gap-5 justify-content-center py-4" [ngStyle]="{'flex-flow': viewMore ? 'wrap' : 'nowrap' }">
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
+  <div class="container-fluid">
+    <div class="row text-center mt-5 mb-3 row-upcoming-section">
+      <h6 style="font: normal normal bold 25px/34px Roboto; color: #646464;">UPCOMING <span
+          style="color: #ED952B;">YATRA'S</span> </h6>
+    </div>
 
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
+    <div class="mx-3 row card-group gap-5 justify-content-center pb-4"
+      [ngStyle]="{'flex-flow': viewMore ? 'wrap' : 'nowrap' }">
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
             </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
             </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
           </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
-        </div>
-
-        <div class="card p-0">
-          <img src="/assets/images/image.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="row header-info">
-              <div class="col">
-                <span class="card-title">
-                  <h5 class="m-0">Karnataka</h5>
-                  <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon"> 26/12/2023</small>
-                </span>
-              </div>
-              <div class="col text-end align-self-center price">
-                $15000/-
-              </div>
-            </div>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end" >Details</button>
-          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
         </div>
       </div>
 
-      <div class="row justify-content-center pt-3">
-        <button class="details-btn btn viewmore-btn" (click) = 'viewMore = !viewMore'>
-          {{ viewMore ? 'View Less' : 'View More' }}
-        </button>
-      </div>
-
-      <div class="row text-center mt-5">
-        <h6 style="font: normal normal bold 25px/34px Roboto; color: #646464;">OUR <span style="color: #ED952B;">PACKAGES</span> </h6> 
-      </div>
-
-      <div class="card-group gap-5 justify-content-center">
-        <div class="card ourpackage-card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col align-self-center">
-                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
-              </div>
-              <div class="col text-end">
-                <button routerLink="/packages" class="btn  details-btn">Details</button>
-              </div>
-            </div>            
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
           </div>
-        </div>
-
-        <div class="card ourpackage-card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col align-self-center">
-                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
-              </div>
-              <div class="col text-end">
-                <button routerLink="/packages" class="btn  details-btn">Details</button>
-              </div>
-            </div>            
-          </div>
-        </div>
-
-        <div class="card ourpackage-card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col align-self-center">
-                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
-              </div>
-              <div class="col text-end">
-                <button routerLink="/packages" class="btn  details-btn">Details</button>
-              </div>
-            </div>            
-          </div>
-        </div>
-      
-        <div class="card ourpackage-card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col align-self-center">
-                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
-              </div>
-              <div class="col text-end">
-                <button routerLink="/packages" class="btn  details-btn">Details</button>
-              </div>
-            </div>            
-          </div>
-        </div>
-        
-        <div class="card ourpackage-card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col align-self-center">
-                <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
-              </div>
-              <div class="col text-end">
-                <button routerLink="/packages" class="btn  details-btn">Details</button>
-              </div>
-            </div>            
-          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
         </div>
       </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+
+      <div class="card p-0">
+        <img src="/assets/images/image.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="row header-info">
+            <div class="col">
+              <span class="card-title">
+                <h5 class="m-0">Karnataka</h5>
+                <small class="form-text"><img src="/assets/images/calender.png" class="calender-icon">
+                  26/12/2023</small>
+              </span>
+            </div>
+            <div class="col text-end align-self-center price">
+              $15000/-
+            </div>
+          </div>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <button [routerLink]="['/packagedetails','Gujarath']" class="btn  details-btn float-end">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center pt-3">
+      <button class="details-btn btn viewmore-btn" (click)='viewMore = !viewMore'>
+        {{ viewMore ? 'View Less' : 'View More' }}
+      </button>
+    </div>
+
+    <div class="row text-center mt-5 mb-3">
+      <h6 style="font: normal normal bold 25px/34px Roboto; color: #646464;">OUR <span
+          style="color: #ED952B;">PACKAGES</span> </h6>
+    </div>
+
+    <div class="card-group gap-5 justify-content-center">
+      <div class="card ourpackage-card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col align-self-center">
+              <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+            </div>
+            <div class="col text-end">
+              <button routerLink="/packages" class="btn  details-btn">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card ourpackage-card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col align-self-center">
+              <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+            </div>
+            <div class="col text-end">
+              <button routerLink="/packages" class="btn  details-btn">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card ourpackage-card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col align-self-center">
+              <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+            </div>
+            <div class="col text-end">
+              <button routerLink="/packages" class="btn  details-btn">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card ourpackage-card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col align-self-center">
+              <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+            </div>
+            <div class="col text-end">
+              <button routerLink="/packages" class="btn  details-btn">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card ourpackage-card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col align-self-center">
+              <h5 class="card-title m-0" style="color: #FFFFFF;">Karnataka</h5>
+            </div>
+            <div class="col text-end">
+              <button routerLink="/packages" class="btn  details-btn">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

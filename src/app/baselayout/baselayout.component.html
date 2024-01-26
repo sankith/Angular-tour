@@ -1,13 +1,54 @@
 <section>
 
-<div class="bg-image">
-  <nav class="navbar navbar-expand-md p-0">
+  <div [ngClass]="showBox == 'home' ? 'bg-image' : ''">
+    <nav class="navbar navbar-expand-md p-0">
+      <div class="container-fluid nav-bar-container">
+        <div class="row w-100 ms-1 align-items-baseline">
+          <div class="col-12 w-md-25 w-100 col-md d-flex justify-content-between align-self-center">
+            <a class="navbar-brand fw-bold" href="#" style="color: #FEC86E;">TRAVEL LOGO</a>
+            <button class="navbar-toggler details-btn" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="col-auto w-50 align-self-end">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #FEC86E;">SriLaxmiNarsimha Tours
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-lg-0 w-100 flex-grow-1 justify-content-center">
+                  <li class="nav-item" [ngClass]="showBox == 'home' ? 'home-nav-item' : ''" id="home" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
+                    routerLink="/home">
+                    <span class="nav-link"[ngClass]="showBox == 'home' ? 'home-nav-link' : ''">HOME</span>
+                  </li>
+                  <li class="nav-item" [ngClass]="showBox == 'home' ? 'home-nav-item' : ''" id="packages" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
+                    routerLink="/packages">
+                    <span class="nav-link"[ngClass]="showBox == 'home' ? 'home-nav-link' : ''">PACKAGES</span>
+                  </li>
+                  <li class="nav-item" [ngClass]="showBox == 'home' ? 'home-nav-item' : ''" id="about" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
+                    routerLink="/about">
+                    <span class="nav-link"[ngClass]="showBox == 'home' ? 'home-nav-link' : ''">ABOUT</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col w-25 d-none d-md-flex justify-content-end align-self-center">
+            <input type="search" class="form-control me-2 w-auto searchbar" placeholder=" Search">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-md p-0">
     <div class="container-fluid nav-bar-container">
       <div class="row w-100 ms-1 align-items-baseline">
         <div class="col-12 w-md-25 w-100 col-md d-flex justify-content-between">
-          <a class="navbar-brand fw-bold" href="#" style="color: #FFFFFF;">
-            <!-- <img src="/assets/images/s.png" alt=""> --> TRAVEL LOGO
-          </a>
+          <a class="navbar-brand fw-bold" href="#" style="color: #FFFFFF;">TRAVEL LOGO</a>
           <button class="navbar-toggler details-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,7 +68,7 @@
                   <span class="nav-link">PACKAGES</span>
                 </li>
                 <li class="nav-item" id="about" data-bs-dismiss="offcanvas" (click)="changeActive($event)" routerLink="/about">
-                  <span class="nav-link">ABOUT US</span>
+                  <span class="nav-link">ABOUT</span>
                 </li>
               </ul>
             </div>
@@ -39,9 +80,9 @@
       </div>
       
     </div>
-  </nav>
+  </nav> -->
 
-  <div class="container w-50 filter-container d-none d-md-flex" *ngIf = "showBox == 'packagedetails'">
+    <!-- <div class="container w-50 filter-container d-none d-md-flex" *ngIf = "showBox == 'packagedetails'">
     <div class="row w-100 align-items-center text-center">
       <div class="col h-75" style="border-right: 2px dashed #777777;">
         <div style="position: relative; top: 25%;">
@@ -63,7 +104,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="container w-75 filter-container d-none d-md-flex"  *ngIf = "showBox == 'home'">
     <div class="row w-100 align-items-center">
@@ -82,89 +123,94 @@
     </div>
   </div>
 
-</div>
+  </div>
 
 
 
-<div class="content-outlet mb-3" [ngClass]="showBox == 'about' || showBox == 'packages' ? 'mt-0' : 'mt-3 mt-3 mt-md-5'">
-  <router-outlet></router-outlet>
-</div>  
+  <div class="content-outlet mb-4">
+    <router-outlet></router-outlet>
+  </div>
 
-<div class="container-fluid footer mt-2">
-  <div class="row footer-row">
-    <div class="row h-75 p-2 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex gy-4 gy-md-4 gy-lg-0">
-      <div class="col-sm-12 flex-column d-flex align-items-center align-self-center">
-        <span class="text-center">
-          <h5 class="text-center text-decoration-underline travel-logo fs-3">TRAVEL LOGO</h5>
-          <a href="https://www.instagram.com/srilaxminarsimhatours" target="_blank">
-            <img src="../../assets/images/instagram.png" class="social-media-icons">
-          </a>
-          <a href="https://api.whatsapp.com/send?phone=9294000040" target="_blank">
-            <img src="../../assets/images/whatapp.png" class="social-media-icons">
-          </a>
-          <a href="http://www.facebook.com/srilaxminarsimhatours" target="_blank">
-            <img src="../../assets/images/facebook.png" class="social-media-icons">
-          </a>
-        </span>
-      </div>
-      <div class="col-sm-12 flex-column d-flex align-items-center align-self-center">
-        <h5 class="text-center text-decoration-underline fs-3 footer-label-title">OUR CONTACTS</h5>
-        <Address class="mb-0">
+  <div class="container-fluid footer">
+    <div class="row footer-row">
+      <div class="row h-75 p-2 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex gy-4 gy-md-4 gy-lg-0">
+        <div class="col-sm-12 flex-column d-flex align-items-center align-self-center">
+          <span class="text-center">
+            <h5 class="text-center text-decoration-underline travel-logo fs-3">TRAVEL LOGO</h5>
+            <a href="https://www.instagram.com/srilaxminarsimhatours" target="_blank">
+              <img src="../../assets/images/instagram.png" class="social-media-icons">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=9294000040" target="_blank">
+              <img src="../../assets/images/whatapp.png" class="social-media-icons">
+            </a>
+            <a href="http://www.facebook.com/srilaxminarsimhatours" target="_blank">
+              <img src="../../assets/images/facebook.png" class="social-media-icons">
+            </a>
+          </span>
+        </div>
+        <div class="col-sm-12 flex-column d-flex align-items-center align-self-center">
+          <h5 class="text-center text-decoration-underline fs-3 footer-label-title">OUR CONTACTS</h5>
+          <Address class="mb-0">
             <ul class="foo-content mb-0">
               <li class="pb-1 list-unstyled">
-                <img src="../../assets/images/location.png" class="address-icons" alt="">Nyalkal,Nizamabad. Telangana - 503230.
+                <img src="../../assets/images/location.png" class="address-icons" alt="">Nyalkal,Nizamabad. Telangana -
+                503230.
               </li>
               <li class="pb-1 list-unstyled">
-                <i class="address-icons bi bi-person"></i>Kulakarni Prahallad Rao <span class="phone-number"><a href="tel:+919948134708"><i class="address-icons bi bi-telephone"></i>9948134708</a> </span>
+                <i class="address-icons bi bi-person"></i>Kulakarni Prahallad Rao <span class="phone-number"><a
+                    href="tel:+919948134708"><i class="address-icons bi bi-telephone"></i>9948134708</a> </span>
               </li>
               <li class="pb-1 list-unstyled">
-                <i class="address-icons bi bi-person"></i>Kulakarni Prashanth <span class="phone-number"><a href="tel:+919603104108"><i class="address-icons bi bi-telephone"></i>9603104108</a> </span>
+                <i class="address-icons bi bi-person"></i>Kulakarni Prashanth <span class="phone-number"><a
+                    href="tel:+919603104108"><i class="address-icons bi bi-telephone"></i>9603104108</a> </span>
               </li>
               <li class="pb-1 list-unstyled">
-                <i class="address-icons bi bi-person"></i>Kulakarni Praveen Kumar <span class="phone-number"><a href="tel:+919294000040"><i class="address-icons bi bi-telephone"></i>9294000040</a> </span>
+                <i class="address-icons bi bi-person"></i>Kulakarni Praveen Kumar <span class="phone-number"><a
+                    href="tel:+919294000040"><i class="address-icons bi bi-telephone"></i>9294000040</a> </span>
               </li>
             </ul>
           </Address>
+        </div>
+        <div class="col-sm-12 flex-column d-flex align-items-sm-center align-items-left align-self-center">
+          <h5 class="text-center text-decoration-underline fs-3  footer-label-title">OUR PACKAGES</h5>
+          <ul class="foo-content">
+            <li class="pb-1 list-unstyled">
+              <a class="icon-link icon-link-hover link-dark text-decoration-none" routerLink="/packages">
+                <i class="bi bi-chevron-right"></i>Kashi</a>
+            </li>
+            <li class="pb-1 list-unstyled">
+              <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
+                <i class="bi bi-chevron-right"></i>Gujarath</a>
+            </li>
+            <li class="pb-1 list-unstyled">
+              <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
+                <i class="bi bi-chevron-right"></i>Nepal</a>
+            </li>
+            <li class="pb-1 list-unstyled">
+              <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
+                <i class="bi bi-chevron-right"></i>Rameshwaram</a>
+            </li>
+            <li class="pb-1 list-unstyled">
+              <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
+                <i class="bi bi-chevron-right"></i>Karnataka</a>
+            </li>
+            <li class="pb-1 list-unstyled">
+              <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
+                <i class="bi bi-chevron-right"></i> Chardham</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-sm-12 flex-column d-flex align-items-sm-center align-items-left align-self-center">
-        <h5 class="text-center text-decoration-underline fs-3  footer-label-title">OUR PACKAGES</h5>
-        <ul class="foo-content">
-          <li class="pb-1 list-unstyled">
-            <a class="icon-link icon-link-hover link-dark text-decoration-none" routerLink="/packages">
-              <i class="bi bi-chevron-right"></i>Kashi</a>
-          </li>
-          <li class="pb-1 list-unstyled">
-            <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
-              <i class="bi bi-chevron-right"></i>Gujarath</a>
-          </li>
-          <li class="pb-1 list-unstyled">
-            <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
-              <i class="bi bi-chevron-right"></i>Nepal</a>
-          </li>
-          <li class="pb-1 list-unstyled">
-            <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
-              <i class="bi bi-chevron-right"></i>Rameshwaram</a>
-          </li>
-          <li class="pb-1 list-unstyled">
-            <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
-              <i class="bi bi-chevron-right"></i>Karnataka</a>
-          </li>
-          <li class="pb-1 list-unstyled">
-            <a class="icon-link icon-link-hover link-dark text-decoration-none" href="">
-              <i class="bi bi-chevron-right"></i> Chardham</a>
-          </li>
-        </ul>
+      <div class="row h-25 text-center py-2 align-items-center" style="border-top:1px solid white">
+        <div class="col w-100">
+          <h4 class="footer-label-title text-center">Developer</h4>
+          <span class="foo-content"><i class="bi bi-person"></i>Sankith Thurpu <span class="phone-number"> <i
+                class="address-icons bi bi-telephone"></i>9100837067</span></span>
+
+        </div>
       </div>
     </div>
-    <div class="row h-25 text-center py-2 align-items-center" style="border-top:1px solid white">
-      <div class="col w-100">
-        <h4 class="footer-label-title text-center">Developer</h4>
-        <span class="foo-content"><i class="bi bi-person"></i>Sankith Thurpu <span class="phone-number"> <i class="address-icons bi bi-telephone"></i>9100837067</span></span>
-        
-      </div>
-    </div>
+
   </div>
- 
-</div>
 
 </section>
