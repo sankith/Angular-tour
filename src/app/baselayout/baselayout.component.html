@@ -1,6 +1,6 @@
 <section>
 
-  <div [ngClass]="showBox == 'home' ? 'bg-image' : ''">
+  <div>
     <nav class="navbar navbar-expand-md p-0">
       <div class="container-fluid nav-bar-container">
         <div class="row w-100 ms-1 align-items-baseline">
@@ -11,7 +11,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-          <div class="col-auto w-50 align-self-end">
+          <div class="col-auto w-50 d-flex align-self-end">
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
@@ -22,17 +22,17 @@
               </div>
               <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-lg-0 w-100 flex-grow-1 justify-content-center">
-                  <li class="nav-item" [ngClass]="showBox == 'home' ? 'home-nav-item' : ''" id="home" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
+                  <li class="nav-item" id="home" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
                     routerLink="/home">
-                    <span class="nav-link"[ngClass]="showBox == 'home' ? 'home-nav-link' : ''">HOME</span>
+                    <span class="nav-link">HOME</span>
                   </li>
-                  <li class="nav-item" [ngClass]="showBox == 'home' ? 'home-nav-item' : ''" id="packages" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
+                  <li class="nav-item" id="packages" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
                     routerLink="/packages">
-                    <span class="nav-link"[ngClass]="showBox == 'home' ? 'home-nav-link' : ''">PACKAGES</span>
+                    <span class="nav-link">PACKAGES</span>
                   </li>
-                  <li class="nav-item" [ngClass]="showBox == 'home' ? 'home-nav-item' : ''" id="about" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
+                  <li class="nav-item" id="about" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
                     routerLink="/about">
-                    <span class="nav-link"[ngClass]="showBox == 'home' ? 'home-nav-link' : ''">ABOUT</span>
+                    <span class="nav-link">ABOUT</span>
                   </li>
                 </ul>
               </div>
@@ -44,85 +44,6 @@
         </div>
       </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-md p-0">
-    <div class="container-fluid nav-bar-container">
-      <div class="row w-100 ms-1 align-items-baseline">
-        <div class="col-12 w-md-25 w-100 col-md d-flex justify-content-between">
-          <a class="navbar-brand fw-bold" href="#" style="color: #FFFFFF;">TRAVEL LOGO</a>
-          <button class="navbar-toggler details-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="col-auto w-50 align-self-end">
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #FFFFFF;">SriLaxmiNarsimha Tours</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-lg-0 w-100 flex-grow-1 justify-content-center">
-                <li class="nav-item" id="home" data-bs-dismiss="offcanvas" (click)="changeActive($event)" routerLink="/home">
-                  <span class="nav-link">HOME</span>
-                </li>
-                <li class="nav-item" id="packages" data-bs-dismiss="offcanvas" (click)="changeActive($event)" routerLink="/packages">
-                  <span class="nav-link">PACKAGES</span>
-                </li>
-                <li class="nav-item" id="about" data-bs-dismiss="offcanvas" (click)="changeActive($event)" routerLink="/about">
-                  <span class="nav-link">ABOUT</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col w-25 d-none d-md-flex justify-content-end">
-          <input type="search" class="form-control me-2 w-auto searchbar" placeholder=" Search">
-        </div>
-      </div>
-      
-    </div>
-  </nav> -->
-
-    <!-- <div class="container w-50 filter-container d-none d-md-flex" *ngIf = "showBox == 'packagedetails'">
-    <div class="row w-100 align-items-center text-center">
-      <div class="col h-75" style="border-right: 2px dashed #777777;">
-        <div style="position: relative; top: 25%;">
-          <label for="packageduration" class="form-label" style="color: #646464;">Package Duration</label>
-          <br>
-          <span id="packageduration" style="color: #ED952B; font-style: bold;">
-            9 NIGHTS - 10 DAYS
-          </span>
-        </div>
-        
-      </div>
-      <div class="col h-75">
-        <div style="position: relative; top: 25%;">
-          <label for="packagecost" class="form-label" style="color: #646464;">Package Cost</label>
-          <br>
-          <span id="packagecost" style="color: #ED952B; font-style: bold;">          
-            20,000/- PER PERSON
-          </span>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <div class="container w-75 filter-container d-none d-md-flex"  *ngIf = "showBox == 'home'">
-    <div class="row w-100 align-items-center">
-      <div class="col">
-          <label for="destinationselector" class="form-label">Select Your Destination</label>
-          <input type="text" class="form-control" id="destinationselector" placeholder="All Destinations">
-      </div>
-      <div class="col">
-        <label for="dateselector" class="form-label">Select Your Date</label>
-          <input type="date" class="form-control" id="dateselector" placeholder="mm-dd-yyyy">
-      </div>
-      <div class="col">
-        <label for="pricerangeselector" class="form-label">Select Price Range</label>
-        <input type="range" class="form-range" min="0" max="5" step="0.5" id="pricerangeselector">
-      </div>
-    </div>
-  </div>
-
   </div>
 
 

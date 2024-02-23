@@ -1,5 +1,5 @@
-<section class="text-dark">
-  <!-- <div class="bg-image">
+<section class="text-dark mt-0">
+  <div class="bg-image">
     <div class="container w-75 filter-container d-none d-md-flex">
       <div class="row w-100 align-items-center">
         <div class="col">
@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   
 
   <div class="container-fluid">
@@ -25,8 +25,8 @@
           style="color: #ED952B;">YATRA'S</span> </h6>
     </div>
 
-    <div class="mx-3 row card-group gap-5 justify-content-center pb-4"
-      [ngStyle]="{'flex-flow': viewMore ? 'wrap' : 'nowrap' }">
+    <div class="mx-3 row card-group gap-5  pb-4"
+      [ngStyle]="{'flex-flow': viewMore ? 'wrap' : 'nowrap' }" [ngClass]="viewMore ? 'justify-content-center ' : ''">
       <div class="card p-0">
         <img src="/assets/images/image.png" class="card-img-top" alt="...">
         <div class="card-body">

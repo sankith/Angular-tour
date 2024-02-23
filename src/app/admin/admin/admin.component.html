@@ -1,0 +1,29 @@
+<section>
+    <div>
+        <tabset class="nav nav-tabs mt-2 mb-3">
+            <tab id="customer-details">
+                <ng-template tabHeading>
+                    <a class="text-decoration-none" style="color: #ED952B;" (click)="toggleActiveTabs('customer-details-link')" routerLink="/admin/customer-details">Customer Details</a>
+                </ng-template>
+            </tab>
+            <tab id="tours-offered">
+                <ng-template tabHeading>
+                    <a class="text-decoration-none" style="color: #ED952B;" (click)="toggleActiveTabs('tours-offered-link')" routerLink="/admin/tours-offered">Tours</a>
+                </ng-template>
+
+            </tab>
+            <tab id="train-details">
+                <ng-template tabHeading>
+                    <a class="text-decoration-none" style="color: #ED952B;" (click)="toggleActiveTabs('train-details-link')" routerLink="/admin/train-details">Train Details</a>
+                </ng-template>
+            </tab>
+            <tab id="schedule">
+                <ng-template tabHeading>
+                    <a class="text-decoration-none" style="color: #ED952B;" (click)="toggleActiveTabs('schedule-link')" routerLink="/admin/schedule">Schedule</a>
+                </ng-template>
+            </tab>
+        </tabset>
+      </div>
+</section>
+
+<router-outlet></router-outlet>
