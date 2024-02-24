@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators } from "@angular/forms";
 import { AgGridAngular } from "ag-grid-angular";
 import { ColDef, GridReadyEvent, PaginationNumberFormatterParams,
@@ -12,6 +12,8 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./customer-details.component.scss']
 })
 export class CustomerDetailsComponent implements OnInit {
+
+  @ViewChild('template') linkFormTemplate!:TemplateRef<any>;
 
   //Start : Form Declaration
   customerDetails = new FormGroup({
@@ -87,6 +89,7 @@ export class CustomerDetailsComponent implements OnInit {
 
   closeModal(){
     this.modalRef?.hide();
+    this.gridApi.deselectAll();
   }
 
   onGridReady(params: GridReadyEvent) {
@@ -111,7 +114,6 @@ export class CustomerDetailsComponent implements OnInit {
     console.log('submit customer')
     console.log(template.value)
     console.log(this.selectedRows)
-    this.gridApi.deselectAll();
     this.closeModal();
 
   }

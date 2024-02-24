@@ -2,8 +2,33 @@
     <div class="container-fluid">
         
         <div class="row justify-content-end my-2 me-2">
-            <!-- <button class="btn details-btn w-auto" (click)="addCustomerForm()">
-                {{ showCustomerForm ? 'Cancel' : 'Add Customer'}}
-            </button> -->
+            <div class="col">
+                <div class="row">
+                    <div class="col-auto">
+                        <label for="floatingSelect" class="d-flex align-items-center gap-2" style="white-space: nowrap;">Tour
+                            <select name="tour" required ngModel class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option hidden value selected>Select Tour</option>
+                            <option value="kashi">Kashi</option>
+                            <option value="Gujarath">Gujarath</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-auto">
+                        <label for="floatingSelect" class="d-flex align-items-center gap-2" style="white-space: nowrap;">Request Type
+                            <select name="type" required ngModel class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option hidden value selected>Select Type</option>
+                            <option value="Schedule" selected>Schedule</option>
+                            <option value="Visiting Place">Visiting Place</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- <button class="btn details-btn w-auto" (click)="addCustomerForm()">
+                    {{ showCustomerForm ? 'Cancel' : 'Add Customer'}}
+                </button> -->
+            </div>
+            
         </div>
     </div>
