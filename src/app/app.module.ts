@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminModule } from './admin/admin.module';
 import { LoginComponent } from './login/login.component';
+import { PopoverModule } from "ngx-bootstrap/popover";
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { LoginComponent } from './login/login.component';
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
+    PopoverModule
   ],
   providers: [],
   bootstrap: [AppComponent]

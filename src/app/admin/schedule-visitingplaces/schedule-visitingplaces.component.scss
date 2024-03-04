@@ -20,3 +20,41 @@
     margin-bottom: 20px !important;
 }
 
+.day{
+    width: 10%;
+}
+
+.schedule{
+    width: 90%;
+}
+
+tr td:first-child{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.customerForm{
+    width: 0;
+    display: none;
+}
+
+.form-floating{
+    margin-bottom: 20px !important;
+}
+
+::ng-deep{
+    .ql-container{
+        height: 100px;
+    }
+
+    quill-view-html{
+        .ql-container{
+            height: max-content;
+        }
+    }
+
+    .ag-header-cell-label {
+        justify-content: center !important;
+       }
+       
+}

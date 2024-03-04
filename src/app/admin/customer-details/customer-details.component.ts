@@ -1,10 +1,12 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators } from "@angular/forms";
+import { Router } from '@angular/router';
 import { AgGridAngular } from "ag-grid-angular";
 import { ColDef, GridReadyEvent, PaginationNumberFormatterParams,
    SizeColumnsToContentStrategy, SizeColumnsToFitGridStrategy,
    SizeColumnsToFitProvidedWidthStrategy, GridApi } from 'ag-grid-community';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { AppService } from 'src/app/services/app.service';
 
 @Component({
   selector: 'app-customer-details',
@@ -76,8 +78,10 @@ export class CustomerDetailsComponent implements OnInit {
     class: 'modal-md'
   };
 
-  constructor(private modalService: BsModalService) {
-   }
+  constructor(private router: Router, private appService: AppService,private modalService: BsModalService) {
+    this.appService.setUrl(this.router.url);
+
+  }
 
   ngOnInit(): void {
   }

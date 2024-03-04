@@ -34,10 +34,38 @@
                     routerLink="/about">
                     <span class="nav-link">ABOUT</span>
                   </li>
-                  <li class="nav-item" id="about" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
-                    routerLink="/admin">
+                  <li class="nav-item" id="admin" data-bs-dismiss="offcanvas" (click)="changeActive($event)"
+                    [popover]="popTemplate"
+                    placement="bottom"
+                    [adaptivePosition]="false"
+                    triggers="mouseenter:click"
+                    [outsideClick]="true"
+                    #pop="bs-popover"
+                    >
                     <span class="nav-link">ADMIN</span>
                   </li>
+
+                  <ng-template #popTemplate>
+                    <ul class="foo-content p-0 d-grid gap-2">
+                      <li class="pb-1 list-unstyled">
+                        <a class="icon-link icon-link-hover link-dark text-decoration-none" (click)="pop.hide()" routerLink="/admin/customer-details">
+                          <i class="bi bi-chevron-right"></i>Customer Details</a>
+                      </li>
+                      <li class="pb-1 list-unstyled">
+                        <a class="icon-link icon-link-hover link-dark text-decoration-none" (click)="pop.hide()" routerLink="/admin/tours-offered">
+                          <i class="bi bi-chevron-right"></i>Tour Details</a>
+                      </li>
+                      <li class="pb-1 list-unstyled">
+                        <a class="icon-link icon-link-hover link-dark text-decoration-none" (click)="pop.hide()" routerLink="/admin/schedule">
+                          <i class="bi bi-chevron-right"></i>Schedule Details</a>
+                      </li>
+                      <li class="pb-1 list-unstyled">
+                        <a class="icon-link icon-link-hover link-dark text-decoration-none" (click)="pop.hide()" routerLink="/admin/train-details">
+                          <i class="bi bi-chevron-right"></i>Train Details</a>
+                      </li>
+                    </ul>
+                  </ng-template>
+
                 </ul>
               </div>
             </div>

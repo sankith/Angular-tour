@@ -13,7 +13,6 @@ export class BaselayoutComponent implements OnInit {
 
   faLocationPin = faLocationPin as IconProp;
   router!: Route;
-  showBox = 'home';
   currentUrl = '';
 
   constructor(private appService: AppService) { 
@@ -22,7 +21,6 @@ export class BaselayoutComponent implements OnInit {
       if (typeof(this.currentUrl) == "string"){
         setTimeout(() => {
           let page = this.currentUrl.split('/')[1];
-          this.showBox = page;
             this.changeActive(page == 'packagedetails' ? 'packages' : page)
           }, 3);
       }
@@ -38,7 +36,7 @@ export class BaselayoutComponent implements OnInit {
 
   changeActive(event: any){
     
-    let ids = ['home', 'packages', 'packagedetails', 'about']
+    let ids = ['home', 'packages', 'packagedetails', 'about', 'admin']
     ids.forEach((id)=> {
       let element = document.getElementById(id)
       if (typeof(event) == "string"){

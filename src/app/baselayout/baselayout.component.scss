@@ -1,3 +1,9 @@
+::ng-deep{
+    .popover{
+        margin-top: 0px !important;
+    }
+}
+
 .bg-image{
     background-image: linear-gradient(to bottom, #000000ba, transparent), url("/assets/images/image.png");
     min-height: 350px;

@@ -1,7 +1,9 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ColDef, SizeColumnsToFitGridStrategy, SizeColumnsToFitProvidedWidthStrategy, SizeColumnsToContentStrategy, PaginationNumberFormatterParams, GridApi, GridReadyEvent, GridOptions } from 'ag-grid-community';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { AppService } from 'src/app/services/app.service';
 
 @Component({
   selector: 'app-tours-offered',
@@ -94,7 +96,9 @@ export class ToursDetailsComponent implements OnInit {
     class: 'modal-xl'
   };
 
-  constructor(private modalService: BsModalService) {
+  constructor(private modalService: BsModalService, private router: Router, private appService: AppService) {
+    this.appService.setUrl(this.router.url);
+
     this.gridOptions = {
       onRowClicked: event => {
         this.openModal();
