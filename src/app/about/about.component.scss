@@ -1,0 +1,20 @@
+:host::ng-deep{
+
+    p.about-us{
+        border-radius: 10px;
+        text-align: justify;
+    }
+    
+    .panel.card.accordionClass{
+        .panel-heading.card-header.panel-enabled{
+            background-color: aliceblue !important;
+        }
+    }
+    
+}
+
+h6{
+    font: normal normal 900 94px/127px Roboto;
+    letter-spacing: 0px;
+    color: #FEC86E;
+}

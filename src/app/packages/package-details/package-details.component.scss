@@ -1,0 +1,241 @@
+.header-info{
+    // border-bottom: 1px solid;
+    .image{
+        border-left: 2px solid #ED952B;
+    }
+}
+
+.card{
+    border: 1px solid #7070705A !important;
+}
+
+.itinary-row{
+    margin-bottom: 10px;
+}
+
+.itinary-day{
+    width: 100%;
+    font: normal normal bold 30px/40px Roboto;
+    letter-spacing: 0px;
+    color: #646464;
+}
+
+.pkgn-inxl-title{
+    font: normal normal bold 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #646464;
+}
+
+
+.itinary-details{
+    width: 100%;
+    overflow-wrap: anywhere;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000005E;
+    border-radius: 29px;
+    opacity: 1;
+    font: normal normal normal 23px/28px Roboto;
+    letter-spacing: 0.23px;
+    color: #646464;
+    border-left: 5px solid #ED952B;
+
+}
+
+
+.card-title{
+    color: #ED952B;
+}
+
+.pkg-inxl{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #40404066;
+    border-radius: 12px;
+
+    .card-title{
+        padding: 10px 30px;
+    }
+}
+
+.viewmore-btn{
+    width: 30%;
+}
+
+.visiting-places-title{
+    text-align: center;
+    letter-spacing: NaNpx;
+    color: #ED952B;
+    font: normal normal 900 25px/34px Roboto;
+}
+
+li.pkg-inxl-li {
+    list-style: none;
+    padding: 10px 30px;
+    background-image: url('/assets/images/bullet.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+
+    font: normal normal normal 21px/26px Roboto;
+    letter-spacing: 0.23px;
+    color: #646464;
+}
+       
+.card-group{
+    flex-flow: nowrap !important;
+    overflow-x: auto;
+}
+
+.row-package{
+    height: auto;
+
+    .col{
+        height: 200px;
+    }
+}
+
+.package-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.figure{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.figure:hover{
+    transform: scale(1.1); 
+}
+
+.package-details-container{
+    width: 100%;
+}
+
+.bg-image{
+    background-image: linear-gradient(to bottom, #000000ba, transparent), url("/assets/images/image.png");
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: center;
+}
+
+.filter-container{
+    // height: 168px;
+    border: 1px solid #707070;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000066;
+    border-radius: 4px;
+    width: 95%;
+}
+
+label[for='packagecost'], label[for='packageduration']{
+    text-align: left;
+    font: normal normal bold 23px/31px Roboto;
+    letter-spacing: 0px;
+    color: #646464;
+}
+
+.pkg-dur-col{
+    border-bottom: 2px dashed #777777 !important;
+}
+
+
+#packagecost, #packageduration{
+    text-align: left;
+    font: normal normal bold 30px/40px Roboto;
+    letter-spacing: 0px;
+    color: #ED952B;
+}
+
+@media (min-width: 576px) { 
+    .card{
+        width: calc(100vw / 2.5);
+        min-width: calc(100vw / 2.5);
+        max-width: calc(100vw / 2.5);
+    } 
+
+    .pkg-dur-col{
+        border-right: 2px dashed #777777 !important;
+        border-bottom: unset !important;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .card{
+        width: calc(100vw / 3);
+        min-width: calc(100vw / 3);
+        max-width: calc(100vw / 3);
+    }
+
+    .viewmore-btn{
+        width: 15%;
+    }
+
+    .itinary-day{
+        width: 20%;
+    }
+
+    .itinary-details{
+        width: 80%;
+    }
+
+    .package-details-container{
+        width: 100%;
+    }
+
+    .bg-image{
+        min-height: 300px;
+    }
+
+    .filter-container{
+        width: 75% !important;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .card{
+        width: calc(100vw / 3);
+        min-width: calc(100vw / 3);
+        max-width: calc(100vw / 3);
+    }
+
+    .viewmore-btn{
+        width: 10%;
+    }
+
+    .bg-image{
+        min-height: 400px;
+    }
+
+    .filter-container{
+        width: 50% !important;
+    }
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .card{
+        width: calc(100vw / 4);
+        min-width: calc(100vw / 4);
+        max-width: calc(100vw / 4);
+    }
+
+    .viewmore-btn{
+        width: 9%;
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    .card{
+        width: calc(100vw / 5);
+        min-width: calc(100vw / 5);
+        max-width: calc(100vw / 5);
+    }
+ }
+

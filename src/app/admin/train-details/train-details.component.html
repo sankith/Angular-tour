@@ -1,0 +1,60 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <h3 style="color: #ED952B; font-weight: bold;" class="text-center mb-0">Train Details</h3>
+        </div>
+
+        <div class="row justify-content-end my-2 me-2">
+            <button class="btn details-btn w-auto" (click)="addTrainDetailsForm()">
+                {{ showJourneyForm ? 'Cancel' : 'Add Journey'}}
+            </button>
+        </div>
+    </div>
+
+    <div class="content d-flex justify-content-center">
+        <ag-grid-angular
+            style="width: 100%; height: 550px;"
+            class="ag-theme-material customerGrid border border-1 mx-3"
+            [rowData]="rowData"
+            [columnDefs]="colDefs"
+            (gridReady)="onGridReady($event)"
+            [defaultColDef]="defaultColDef"
+            [autoSizeStrategy]="autoSizeStrategy"
+            [pagination]="true"
+            [paginationPageSize]="paginationPageSize"
+            [paginationPageSizeSelector]="paginationPageSizeSelector"
+            [paginationNumberFormatter]="paginationNumberFormatter"
+        >
+        </ag-grid-angular>
+        <div class="container-fluid customerForm" [ngStyle]="showJourneyForm ? {'width' : '35%', 'display':'block'} : {}">
+            <form #addJourneyDetailsForm="ngForm" (ngSubmit)="onSubmit(addJourneyDetailsForm)">
+
+
+                <div class="form-floating">
+                    <select class="form-select" required ngModel id="tour_name" name="tour_name" aria-label="Floating label select example">
+                    <option hidden value selected>Tour</option>
+                    <option value="Kashi">Kashi</option>
+                    <option value="Gujarath">Gujarath</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Chardham">Chardham</option>
+                    <option value="Ramehswaram">Ramehswaram</option>
+                    </select>
+                    <label for="floatingSelect">Select Tour</label>
+                </div>
+
+                <div class="form-floating">
+                    <input class="form-control" type="number" name="train_no" id="train_no" placeholder="Train No" required ngModel>
+                    <label class="form-label" for="train">Train No</label>
+                </div>
+
+                <div class="form-floating">
+                    <input class="form-control" required ngModel type="date" name="journey_date" id="journey_date" placeholder="Journey Date">
+                    <label class="form-label" for="journey_date">Journey Date</label>
+                </div>
+        
+                <button type="submit" class="btn details-btn col w-auto" [disabled]="!addJourneyDetailsForm.valid">Submit</button>
+                <button type="reset" class="btn btn-secondary col w-auto ms-1">Reset</button>
+            </form>
+        </div>
+    </div>
+</section>

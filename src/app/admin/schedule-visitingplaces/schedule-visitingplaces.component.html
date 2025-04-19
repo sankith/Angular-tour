@@ -1,0 +1,114 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <h3 style="color: #ED952B; font-weight: bold;" class="text-center mb-0">Schedule Details</h3>
+        </div>
+        <div class="row justify-content-end my-2 me-2">
+            <div class="col">
+                <div class="row">
+                    <div class="col-auto">
+                        <label for="floatingSelect" class="d-flex align-items-center gap-2" style="white-space: nowrap;">Tour
+                            <select name="tour" required [(ngModel)] = "tourName" (change)="refreshData()" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <!-- <option hidden value selected>Select Tour</option> -->
+                            <option value="kashi" selected>Kashi</option>
+                            <option value="Gujarath">Gujarath</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-auto">
+                        <label for="floatingSelect" class="d-flex align-items-center gap-2" style="white-space: nowrap;">Request Type
+                            <select name="type" required [(ngModel)] = "type" (change)="refreshData()" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option hidden value selected>Select Type</option>
+                            <option value="Schedule" selected>Schedule</option>
+                            <option value="Visiting Place">Visiting Place</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-end mb-2 mt-4 mx-2 align-items-end">
+            <div class="col p-0">
+                <h5 class="mb-0">
+                    {{tourName}} Tour {{type}} Details: 
+                </h5>
+            </div>
+            <div class="col text-end p-0">
+                <button class="btn details-btn w-auto" *ngIf="type == 'Schedule'" (click)="addForm()">
+                    {{ showForm ? 'Cancel' : 'Add Schedule'}}
+                </button>
+                <button class="btn details-btn w-auto" *ngIf="type == 'Visiting Place'" (click)="addForm()">
+                    {{ showForm ? 'Cancel' : 'Add Place'}}
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="type == 'Schedule'" class="content d-flex justify-content-center">
+        <ag-grid-angular
+            style="width: 100%; height: 550px;"
+            class="ag-theme-material customerGrid border border-1 mx-3"
+            [rowData]="rowData"
+            [columnDefs]="colDefs"
+            (gridReady)="onGridReady($event)"
+            [defaultColDef]="defaultColDef"
+            [autoSizeStrategy]="autoSizeStrategy"
+            [pagination]="true"
+            [paginationPageSize]="paginationPageSize"
+            [paginationPageSizeSelector]="paginationPageSizeSelector"
+            [paginationNumberFormatter]="paginationNumberFormatter"
+            >
+        </ag-grid-angular>
+        <div class="container-fluid customerForm" [ngStyle]="showForm ? {'width' : '35%', 'display':'block'} : {}">
+            <form #addDetailsForm="ngForm" (ngSubmit)="onSubmit(addDetailsForm)">
+
+                <div class="form-floating">
+                    <input class="form-control" type="number" name="day" id="day" placeholder="Day" required ngModel>
+                    <label class="form-label" for="day">Day</label>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="floatingSelect">Schedule</label>
+                    <quill-editor ngModel name="schedule" id="schedule"  placeholder="Provide Schedule Details"></quill-editor>
+                </div>
+        
+                <button type="submit" class="btn details-btn col w-auto" [disabled]="!addDetailsForm.valid">Submit</button>
+                <button type="reset" class="btn btn-secondary col w-auto ms-1">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <div *ngIf="type == 'Visiting Place'" class="content d-flex justify-content-center">
+        <table class="table table-bordered mx-3 text-center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Visiting Places</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let place of visitingPlaces | keyvalue">
+                    <td scope="row">{{place.key}}</td>
+                    <td>{{place.value}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="container-fluid customerForm" [ngStyle]="showForm ? {'width' : '35%', 'display':'block'} : {}">
+            <form #addPlaceForm="ngForm" (ngSubmit)="onSubmit(addPlaceForm)">
+
+                <div class="form-floating">
+                    <input class="form-control" type="text" name="place" id="place" placeholder="Place" required ngModel>
+                    <label class="form-label" for="place">Place</label>
+                </div>
+        
+                <button type="submit" class="btn details-btn col w-auto" [disabled]="!addPlaceForm.valid">Submit</button>
+                <button type="reset" class="btn btn-secondary col w-auto ms-1">Reset</button>
+            </form>
+        </div>
+    </div>
+
+</section>

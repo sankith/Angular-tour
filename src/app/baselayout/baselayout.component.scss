@@ -1,0 +1,236 @@
+::ng-deep{
+    .popover{
+        margin-top: 0px !important;
+    }
+}
+
+.bg-image{
+    background-image: linear-gradient(to bottom, #000000ba, transparent), url("/assets/images/image.png");
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.bg-without-image{
+    // background: none !important;
+    margin-bottom: unset !important;
+}
+
+.nav-bar-container{
+    height: 65px !important;
+}
+
+.package-structure{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000066;
+    border-radius: 4px;
+}
+
+.searchbar{
+    background-image: url("/assets/images/search.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 2px;
+    border: #FFFFFF;
+    width: 75% !important;
+    position: relative;
+    width: 263px;
+    height: 39px;
+}
+
+.navbar-brand{
+    img{
+        height: 39px;
+        width: 75% !important;
+    }
+}
+
+.nav-link, .nav-link.active{
+    cursor: pointer;
+    letter-spacing: 0px;
+    color: #646464;
+    border: none;
+    font: normal normal normal 21px/33px Roboto;
+    letter-spacing: 0px;
+}
+
+.nav-item.active{
+    border: none;
+}
+img{
+    height: 500px;
+}
+
+.package .dropdown-menu{
+    display:none;
+}
+
+section{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bi-chevron-right{
+    height: 1.5em !important;
+}
+
+.footer{
+  margin-top: auto !important;
+  color: white;   
+  background-image: linear-gradient(to bottom, #000000, transparent), url("/assets/images/image.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: auto;
+}
+
+.tavel-logo{
+    border: 1px solid #707070;
+    border-radius: 14px;
+}
+
+.footer-label-title{
+    text-align: left;
+    text-decoration: underline;
+    letter-spacing: 0px;
+    color: #646464;
+}
+
+.foo-content{
+    letter-spacing: 0.19px;
+    color: #707070;
+}
+
+.footer-row{
+    background-color: #FFFFFF;
+    color: black;
+    height: 80%;
+    width: 95%;
+    margin: 3% auto;
+    padding: 25px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+}
+
+.social-media-icons{
+    height: 28px;
+    width: 28px;
+    padding: 0px 5px;
+}
+
+.address-icons{
+    color: black;
+    height: 15px;
+    padding: 0px 5px;
+}
+
+.phone-number{
+    white-space: pre;
+}
+
+.filter-container{
+  position: relative;
+  height: 168px;
+  top: 395px;
+  border: 1px solid #707070;
+  opacity: 1;
+
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000066;
+  border-radius: 4px;
+}
+
+label[for='packagecost'], label[for='packageduration']{
+    text-align: left;
+    font: normal normal bold 23px/31px Roboto;
+    letter-spacing: 0px;
+    color: #646464;
+}
+
+
+#packagecost, #packageduration{
+    text-align: left;
+    font: normal normal bold 30px/40px Roboto;
+    letter-spacing: 0px;
+    color: #ED952B;
+}
+
+
+#destinationselector{
+    background-image: url("/assets/images/location.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+#navbarOffcanvas{
+    background: #D58423 !important;
+}
+
+@media (min-width: 576px) { 
+    .package:hover .dropdown-menu{
+        display:block;
+    }
+
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .nav-bar-container{
+        height: 50px !important;
+    }
+
+    
+    .social-media-icons{
+        height: 28px;
+        width: 28px;
+        padding: 0px 5px;
+    }
+
+    .bg-image{
+        min-height: 550px;
+    }
+
+
+    #navbarOffcanvas{
+        background: none !important;
+    }
+
+
+    .nav-item{
+        border-bottom: 1px solid #646464;
+        padding: 0px 16px;
+    }
+
+    .nav-item.active{
+        border-bottom: 3px solid #D58423 !important;
+    }
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .nav-item{
+        padding: 0px 35px;
+    }
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .nav-item{
+        padding: 0px 50px;
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    .nav-item{
+        padding: 0px 68px;
+    }
+ }
+
