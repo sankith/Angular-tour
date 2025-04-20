@@ -2,7 +2,7 @@
 
   <div class="container">
     <div class="row text-center">
-      <h6 style="font: normal normal bold 25px/34px Roboto; color: #ED952B;">Kashi</h6>
+      <h6 style="font: normal normal bold 25px/34px Roboto; color: #ED952B;">{{currentTourDetails?.tourName}}</h6>
     </div>
   </div>
   
@@ -10,13 +10,13 @@
   </div>
 
   <div class="container mt-5 filter-container d-flex p-3 justify-content-center">
-    <div class="row align-items-center text-center gap-3 gap-md-0">
+    <div class="row align-items-center text-center gap-3 gap-md-0 w-100">
       <div class="col-sm pkg-dur-col">
         <div style="position: relative; top: 25%;">
           <label for="packageduration" class="form-label" style="color: #646464;">Package Duration</label>
           <br>
           <span id="packageduration" style="color: #ED952B; font-style: bold;">
-            9 NIGHTS - 10 DAYS
+            {{currentTourDetails?.no_of_days}}
           </span>
         </div>
         
@@ -26,7 +26,7 @@
           <label for="packagecost" class="form-label" style="color: #646464;">Package Cost</label>
           <br>
           <span id="packagecost" style="color: #ED952B; font-style: bold;">          
-            20,000/- PER PERSON
+            {{currentTourDetails?.package_cost}}/- Per Person
           </span>
         </div>
       </div>
@@ -34,12 +34,12 @@
 
     
   </div>
-  
+<!--   
   <div class="container-fluid text-center justify-content-center mt-5">
       <button class="details-btn btn viewmore-btn">
         Enquiry
       </button>
-  </div>
+  </div> -->
   
   <div class="container-fluid mt-5">
     <div class="row text-center">
@@ -48,7 +48,26 @@
     </div>
 
 
-    <div class="mx-3 card-group gap-5 row py-4">
+    <div class="mx-3 card-group gap-5 row py-4 justify-content-center">
+      <ng-container  *ngFor="let place of currentTourDetails?.visitingPlaces; index as i;">
+        <div class="card">
+          <div class="card-body">
+            <div class="row header-info">
+              <!-- <div class="col-4 title align-self-center">
+                <span class="card-title">
+                  <h5 class="m-0 text-center visiting-places-title">FRI <br> JAN <br> 17</h5>
+                </span>
+              </div> -->
+              <div class="col-12 image text-center">
+                <img src="/assets/images/image.png" class="card-img mb-1" alt="...">
+                <span class="visiting-places-title">{{place}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+
+<!-- 
       <div class="card">
         <div class="card-body">
           <div class="row header-info">
@@ -143,23 +162,7 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <div class="row header-info">
-            <div class="col-4 title align-self-center">
-              <span class="card-title">
-                <h5 class="m-0 text-center visiting-places-title">FRI <br> JAN <br> 17</h5>
-              </span>
-            </div>
-            <div class="col-8 image text-center">
-              <img src="/assets/images/image.png" class="card-img" alt="...">
-              <span class="visiting-places-title">Somnath</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="row text-center mt-5">
@@ -168,7 +171,21 @@
 
     <div class="container package-details-container">
       <div class="row d-flex flex-column gap-5">
-        <div class="col d-flex flex-column flex-md-row">
+        <ng-container *ngFor="let day of currentTourDetails?.dayWiseDetails; index as i">
+          <div class="col d-flex flex-column flex-md-row">
+            <div class="itinary-day pe-4 pb-3 pb-md-0 text-md-end align-self-md-center">Day {{day.day}}</div>
+  
+            <div class="itinary-details py-4 ps-4">
+              <ul *ngFor="let schedule of day.schedule; index as j" class="mb-0">
+                <li>{{schedule}}</li>
+              </ul>
+              <!-- <span>
+                {{schedule}}
+              </span> -->
+            </div>
+          </div>
+        </ng-container>
+        <!-- <div class="col d-flex flex-column flex-md-row">
           <div class="itinary-day pe-4 pb-3 pb-md-0 text-md-end align-self-md-center">Day 01</div>
 
           <div class="itinary-details py-4 ps-4">
@@ -203,16 +220,7 @@
               hisdhbfhjbfkghsjbfkhsvbfhkgsdgvchgsdvcfhgsdvfkhgswvfhgsvfhgsdchsvfhsvhisdhbfhjbfkghsjbfkhsvbfhkgsdgvchgsdvcfhgsdvfkhgswvfhgsvfhgsdchsvfhsvhisdhbfhjbfkghsjbfkhsvbfhkgsdgvchgsdvcfhgsdvfkhgswvfhgsvfhgsdchsvfhsv
             </span>
           </div>
-        </div>
-        <div class="col d-flex flex-column flex-md-row">
-          <div class="itinary-day pe-4 pb-3 pb-md-0 text-md-end align-self-md-center">Day 01</div>
-
-          <div class="itinary-details py-4 ps-4">
-            <span>
-              hisdhbfhjbfkghsjbfkhsvbfhkgsdgvchgsdvcfhgsdvfkhgswvfhgsvfhgsdchsvfhsvhisdhbfhjbfkghsjbfkhsvbfhkgsdgvchgsdvcfhgsdvfkhgswvfhgsvfhgsdchsvfhsvhisdhbfhjbfkghsjbfkhsvbfhkgsdgvchgsdvcfhgsdvfkhgswvfhgsvfhgsdchsvfhsv
-            </span>
-          </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -223,12 +231,8 @@
             Package Includes
           </span>
           <div class="card-body pt-2">
-            <ul style="padding: 0px !important;">
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
+            <ul style="padding: 0px !important; margin-bottom: 0px;" *ngFor="let incl of packageInclusion; index as i">
+              <li class="pkg-inxl-li">{{incl}}</li>
             </ul>
           </div>
         </div>
@@ -237,12 +241,8 @@
             Package Excludes
           </span>
           <div class="card-body pt-2">
-            <ul style="padding: 0px !important;">
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
-              <li class="pkg-inxl-li">Lorem ipsum dolor sit amet, consectetur adip</li>
+            <ul style="padding: 0px !important; margin-bottom: 0px;" *ngFor="let excl of packageExclusion; index as i">
+              <li class="pkg-inxl-li">{{excl}}</li>
             </ul>
           </div>
         </div>

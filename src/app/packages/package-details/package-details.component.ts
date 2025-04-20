@@ -14,6 +14,23 @@ export class PackageDetailsComponent implements OnInit {
   packageName!: string;
   faPlus = faPlus as IconProp;
   faMinus = faMinus as IconProp;
+
+  packageInclusion: String[] = [
+    '3AC Train Ticket Reservation.',
+    'Road Transport Push Back Bus.',
+    'Food & Accommodation.',
+    'Morning, Night - Tiffin, Tea & Afternoon - Lunch.',
+  ];
+
+  packageExclusion: String[] = [
+    'Pooja charges in all temples.',
+    'Food in train',
+    'Local transport charges',
+    'Tips & Porter charges',
+    'Additional sight seeing other than mentioned in the itinerary',
+    'Entrance Fees & Guide charges'
+  ];  
+  
   tourDetails: TourDetails[] = [
     { tourName: 'Kashi', no_of_days: 12, package_cost: 28500, 
       visitingPlaces: ['Kashi', 'Ayodhya', 'Prayagraj'], 
@@ -117,11 +134,22 @@ export class PackageDetailsComponent implements OnInit {
                       ]
     },    
   ]
+  currentTourDetails: TourDetails | undefined;
 
   constructor(private router:Router, private route:ActivatedRoute, private appService: AppService) {
 
     this.appService.setUrl(this.router.url);
-
+    this.appService.currenturl$.subscribe((value) => {
+      if (typeof(value) == "string"){
+        setTimeout(() => {
+          let page = value.split('/')[2];
+          this.currentTourDetails = this.tourDetails.find((tour) => {
+            let tourNameTemp = tour.tourName;
+            return tourNameTemp.replace(" ","").toLowerCase() == page?.toLocaleLowerCase()
+          });
+          }, 3);
+      }
+    });
     this.route.params.forEach(e => {
       this.packageName = e.packagename;
       if (this.packageName == undefined || this.packageName == ''){

@@ -24,7 +24,7 @@ export class BaselayoutComponent implements OnInit {
             this.changeActive(page == 'packagedetails' ? 'packages' : page)
           }, 3);
       }
-    })
+    });
   }
 
  
