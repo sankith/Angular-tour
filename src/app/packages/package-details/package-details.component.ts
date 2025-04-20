@@ -85,16 +85,16 @@ export class PackageDetailsComponent implements OnInit {
     { tourName: 'Gujarat', no_of_days: 10, package_cost: 28500, 
       visitingPlaces: ['Ujjain', 'Omkareshwar', 'Vadodara', 'Statue of Unity', 'Somnath', 'Mul Dwaraka', 'Dwaraka', 'Nagesham', 'Beyt Dwaraka', 'Ahmedhabad'], 
       dayWiseDetails: [
-                        {day: 1, schedule: ['']},
-                        {day: 2, schedule: ['']},
-                        {day: 3, schedule: ['']},
-                        {day: 4, schedule: ['']},
-                        {day: 5, schedule: ['']},
-                        {day: 6, schedule: ['']},
-                        {day: 7, schedule: ['']},
-                        {day: 8, schedule: ['']},
-                        {day: 9, schedule: ['']},
-                        {day: 10, schedule: ['']}
+                        {day: 1, schedule: ['Travel to Hyderabd to Ujjain By Train ']},
+                        {day: 2, schedule: ['Reached Ujjain.', 'Check-in hotel.', 'Darshan to Ujjain mahakaleshwar.', 'Over night stay.']},
+                        {day: 3, schedule: ['Local Temple visit.', 'Night stay.']},
+                        {day: 4, schedule: ['Early morning travel to OM KARESHWAR.', 'Darshan to Omkareshwar temple.', 'Darshan to  mamaleshwar.', 'drive to Vadodara and over night stay.']},
+                        {day: 5, schedule: ['Drive to Ekta nagar.', 'Visit State of uninty (sardar vallabhai statue).', 'drive to Somanath and over night stay.']},
+                        {day: 6, schedule: ['Drashan Somanth darshan and perform pooja.', 'Afternoon drive Dwaraka.', 'Darshan Mul Dwaraka.', 'Reached Dwaraka and check-in hotel.', 'Darshan to Sri krishna bagvan.','over night stay.']},
+                        {day: 7, schedule: ['Early mornig Drive to Nagesham to nagesham to ahmedabad.', 'Darshan to Ngesham and performing pooja activites.', 'darshan to beyt dwaraka (krishna temple).', 'drive to ahmedabad over night stay.']},
+                        {day: 8, schedule: ['Ahmedabad local sight seeing.', 'Night stay.',]},
+                        {day: 9, schedule: ['ReTURN journey to Hydrebad from ahmedabad by tarin.']},
+                        {day: 10, schedule: ['Reached Hyderabad']}
                       ]
     },
     { tourName: 'Nepal', no_of_days: 14, package_cost: 43500, 
