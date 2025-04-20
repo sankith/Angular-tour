@@ -149,6 +149,10 @@ label[for='packagecost'], label[for='packageduration']{
     color: #ED952B;
 }
 
+.visiting-place-cards {
+    justify-content: flex-start !important;
+}
+
 @media (min-width: 576px) { 
     .card{
         width: calc(100vw / 2.5);
@@ -192,6 +196,10 @@ label[for='packagecost'], label[for='packageduration']{
 
     .filter-container{
         width: 75% !important;
+    }
+
+    .visiting-place-cards {
+        justify-content: unset !important;
     }
  }
 
