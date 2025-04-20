@@ -94,7 +94,7 @@ export class PackageDetailsComponent implements OnInit {
                         {day: 7, schedule: ['Early mornig Drive to Nagesham to nagesham to ahmedabad.', 'Darshan to Ngesham and performing pooja activites.', 'darshan to beyt dwaraka (krishna temple).', 'drive to ahmedabad over night stay.']},
                         {day: 8, schedule: ['Ahmedabad local sight seeing.', 'Night stay.',]},
                         {day: 9, schedule: ['ReTURN journey to Hydrebad from ahmedabad by tarin.']},
-                        {day: 10, schedule: ['Reached Hyderabad']}
+                        {day: 10, schedule: ['Reached Hyderabad.']}
                       ]
     },
     { tourName: 'Nepal', no_of_days: 14, package_cost: 43500, 
