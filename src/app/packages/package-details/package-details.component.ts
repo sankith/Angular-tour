@@ -111,9 +111,9 @@ export class PackageDetailsComponent implements OnInit {
                         {day: 9, schedule: ['Darshan to Pashupatinath and performing pooja activies.', 'Darshan to Jalnarayan temple.', 'local sightseeing.', 'Over night stay']},
                         {day: 10, schedule: ['Travel to Janakpuri.', 'Darshan to Janaka Mandir.', 'Over night stay.']},
                         {day: 11, schedule: ['Travel to Varanasi.', 'Over night stay.']},
-                        {day: 12, schedule: ['Visit kedargaht for Ganga snanam option for pooja performs.', '']},
-                        {day: 13, schedule: []},
-                        {day: 14, schedule: []}
+                        {day: 12, schedule: ['Visit kedargaht for Ganga snanam option for pooja performs.', 'Darshan to Vishwanath .', 'Local Temple Darshanam.', 'Visit Ganga harati.']},
+                        {day: 13, schedule: ['Return to Hyderabad from Varanasi by Train.']},
+                        {day: 14, schedule: ['Reached to Hyderabad']}
                       ]
     },    
   ]
