@@ -5,8 +5,7 @@
       <h6 style="font: normal normal bold 25px/34px Roboto; color: #ED952B;">{{currentTourDetails?.tourName}}</h6>
     </div>
   </div>
-  
-  <div class="bg-image" style = "background-image: url(../../../assets/images/{{currentTourDetails?.tourName}}.jpg);">
+  <div class="bg-image" style = "background-image: url(../../../assets/images/{{currentTourDetails?.tourName | renameImage}}.jpg);">
   </div>
 
   <div class="container mt-5 filter-container d-flex p-3 justify-content-center">
@@ -16,7 +15,7 @@
           <label for="packageduration" class="form-label" style="color: #646464;">Package Duration</label>
           <br>
           <span id="packageduration" style="color: #ED952B; font-style: bold;">
-            {{currentTourDetails?.no_of_days}}
+            {{currentTourDetails?.no_of_days}} Days
           </span>
         </div>
         

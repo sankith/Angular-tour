@@ -80,7 +80,7 @@ export class PackageDetailsComponent implements OnInit {
                       ]
     },
     { tourName: 'Amarnath', no_of_days: 15, package_cost: 37500, 
-      visitingPlaces: ['Delhi', 'Naina Devi', 'Chintapurnima', 'Jwalamukhi', 'Barjeshwari', 'Chamunda', 'Katra Vaishno Devi', 'Srinagar', 'Baltal', 'Amritsar', 'Amarnath', 'Kurukshetra'], 
+      visitingPlaces: ['Delhi', 'Naina Devi', 'Chintapurnima', 'Jwalamukhi', 'Bajreshwari', 'Chamunda', 'Katra Vaishno Devi', 'Srinagar', 'Baltal', 'Amritsar', 'Amarnath', 'Kurukshetra'], 
       dayWiseDetails: [
                         {day: 1, schedule: ['Departure from Secunderabad to Delhi by train.']},
                         {day: 2, schedule: ['Arrival at Delhi.', 'Delhi local sight seeing.']},
@@ -100,7 +100,7 @@ export class PackageDetailsComponent implements OnInit {
                       ]
     },
     { tourName: 'Gujarat', no_of_days: 10, package_cost: 28500, 
-      visitingPlaces: ['Ujjain', 'Omkareshwar', 'Vadodara', 'Statue of Unity', 'Somnath', 'Mul Dwaraka', 'Dwaraka', 'Nagesham', 'Beyt Dwaraka', 'Ahmedhabad'], 
+      visitingPlaces: ['Ujjain', 'Omkareshwar', 'Statue of Unity', 'Somnath', 'Mul Dwaraka', 'Dwaraka', 'Nagesham', 'Beyt Dwaraka', 'Ahmedhabad'], 
       dayWiseDetails: [
                         {day: 1, schedule: ['Travel to Hyderabd to Ujjain By Train ']},
                         {day: 2, schedule: ['Reached Ujjain.', 'Check-in hotel.', 'Darshan to Ujjain mahakaleshwar.', 'Over night stay.']},

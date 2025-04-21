@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminModule } from './admin/admin.module';
 import { LoginComponent } from './login/login.component';
 import { PopoverModule } from "ngx-bootstrap/popover";
+import { RenameImagePipe } from './shared/rename-image.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { PopoverModule } from "ngx-bootstrap/popover";
     PagenotfoundComponent,
     PackageDetailsComponent,
     LoginComponent,
+    RenameImagePipe,
   ],
   imports: [
     BrowserModule,
